@@ -1,0 +1,618 @@
+{
+ "events": {
+  "00iv0ccb12bdt3l9hshmu13cpg@google.com|2007-12-03": {
+   "summary": "[AEA] Scholastic Bookfair",
+   "when": "Mon Dec 3"
+  },
+  "01vhm60inp9dvseioqq41mblok@google.com|2019-12-05 09:30:00-08:00": {
+   "summary": "[AEA] Kindergarten School Tour for Prospective Parents",
+   "when": "Thu Dec 5, 9:30 am"
+  },
+  "03qqeeblq7e4hoev6hf87rpe3s@google.com|2007-10-24": {
+   "summary": "[AEA] Red Ribbon Days",
+   "when": "Wed Oct 24"
+  },
+  "0g93enh6g6uqmkrufqvv9lqfo8@google.com|2008-12-01 08:30:00-08:00": {
+   "summary": "[AEA] Scholastic Bookfair",
+   "when": "Mon Dec 1, 8:30 am"
+  },
+  "0h4ue6aejd7qsl5372rvjg844c@google.com|2017-03-14 13:15:00-07:00": {
+   "summary": "[AEA] German Theaterfest",
+   "when": "Tue Mar 14, 1:15 pm"
+  },
+  "0h4ue6aejd7qsl5372rvjg844c_R20170314T201500@google.com|2017-03-14 13:15:00-07:00": {
+   "summary": "[AEA] German Theaterfest",
+   "when": "Tue Mar 14, 1:15 pm"
+  },
+  "0h4ue6aejd7qsl5372rvjg844c_R20170316T201500@google.com|2017-03-16 13:15:00-07:00": {
+   "summary": "[AEA] German Theaterfest",
+   "when": "Thu Mar 16, 1:15 pm"
+  },
+  "0l7k12ujk1g29mf008m304pehk@google.com|2009-10-26": {
+   "summary": "[AEA] Scholastic Book Fair",
+   "when": "Mon Oct 26"
+  },
+  "0q3nuqi5qd5j5qup0ugb7sbm4d@google.com|2026-10-30 16:00:00-07:00": {
+   "summary": "[AEA] Trunk or Treat Party!!!!!!",
+   "when": "Fri Oct 30, 4:00 pm"
+  },
+  "113bu57j15as0uhsmhi8vapcak@google.com|2025-01-14 09:30:00-08:00": {
+   "summary": "[AEA] AEACES Kindergarten School Tour in English",
+   "when": "Tue Jan 14, 9:30 am"
+  },
+  "13ecjalbn1gi7dgnpbl9dne0ls@google.com|2026-11-12 18:00:00-08:00": {
+   "summary": "[AEA] AEA Lantern Fest TK-8th @ Organ Pavilion",
+   "when": "Thu Nov 12, 6:00 pm"
+  },
+  "16pk57mhfa0bqimf71qs0vq0sa@google.com|2022-04-14 07:45:00-07:00": {
+   "summary": "[AEA] Safe School Ambassador Training - Elementary",
+   "when": "Thu Apr 14, 7:45 am"
+  },
+  "18torrs1420ks39elb11ekr4r5@google.com|2026-10-09 08:00:00-07:00": {
+   "summary": "[AEA] ES Picture day",
+   "when": "Fri Oct 9, 8:00 am"
+  },
+  "19fn4e9nl5u33iicaltnu29cr8@google.com|2020-01-16 09:30:00-08:00": {
+   "summary": "[AEA] Kindergarten School Tour for Prospective Parents",
+   "when": "Thu Jan 16, 9:30 am"
+  },
+  "1bgi2mcoj260gavsre5s78rtnb@google.com|2026-12-18": {
+   "summary": "[AEA] Fall semester ends",
+   "when": "Fri Dec 18"
+  },
+  "1fvihkmereedn1mgcq2r9mkr88@google.com|2008-01-28": {
+   "summary": "[AEA] 4th Grade Field Trip to Old Town",
+   "when": "Mon Jan 28"
+  },
+  "1h6f7qt9ajf5r2pvigc6nfc8hr@google.com|2023-10-02": {
+   "summary": "[AEA] Custodian's Day",
+   "when": "Mon Oct 2"
+  },
+  "1iake56gg6mus5u7pdviaaa1cu@google.com|2027-06-19": {
+   "summary": "[AEA] Juneteenth",
+   "when": "Sat Jun 19"
+  },
+  "1jtg2f4ifbg8c2bpgavu8bcin3@google.com|2018-04-17 08:00:00-07:00": {
+   "summary": "[AEA] 5th grade German Language Exam A2 - Writing part",
+   "when": "Tue Apr 17, 8:00 am"
+  },
+  "1kertio87shu1f91uitk9a6dh4@google.com|2012-11-08 09:30:00-08:00": {
+   "summary": "[AEA] Elementary school tour for prospective new parents",
+   "when": "Thu Nov 8, 9:30 am"
+  },
+  "1m67cej8a96p4ahv21jc3sb6f3@google.com|2027-06-02": {
+   "summary": "[AEA] 5th grade promotion",
+   "when": "Wed Jun 2"
+  },
+  "1mll5ea669u1gcvhsnj0vqv9s0@google.com|2012-01-26 14:45:00-08:00": {
+   "summary": "[AEA] (3-5th) Basketball Lunch League Sign-ups Due",
+   "when": "Thu Jan 26, 2:45 pm"
+  },
+  "1nbvniob80b8g86dkv88ck6o81@google.com|2026-09-17 18:00:00-07:00": {
+   "summary": "[AEA] Parent/Admin - Greet and Eat",
+   "when": "Thu Sep 17, 6:00 pm"
+  },
+  "2845omf04ohvhjemqc0plsth40@google.com|2010-01-11 08:30:00-08:00": {
+   "summary": "[AEA] Principal Vaughn's Academic Office Hours",
+   "when": "Mon Jan 11, 8:30 am"
+  },
+  "28gob5etufqj9pont8j2grbcuq@google.com|2026-12-21": {
+   "summary": "[BOTH OFF] [PBMS] Winter Break (NO SCHOOL)",
+   "when": "Mon Dec 21 \u2013 Mon Jan 4"
+  },
+  "2cojt74ukcp2f4ub1sk9ep05i9@google.com|2018-11-01 09:30:00-07:00": {
+   "summary": "[AEA] Elementary School Tours for new parents",
+   "when": "Thu Nov 1, 9:30 am"
+  },
+  "2dk15kssf322gevs2728t9uugo@google.com|2012-05-18 07:45:00-07:00": {
+   "summary": "[AEA] [FoAEA] Gala Ticket Sales",
+   "when": "Fri May 18, 7:45 am"
+  },
+  "2f7kohb49n9j3lhal01v4vlmj1@google.com|2024-06-24": {
+   "summary": "[AEA] SummerStein",
+   "when": "Mon Jun 24 \u2013 Fri Jun 28"
+  },
+  "2jo5mq13475cqer04h4c9cj9vd@google.com|2018-06-27 08:00:00-07:00": {
+   "summary": "[AEA] Extended School Year (ESY) program (SpEd)",
+   "when": "Wed Jun 27, 8:00 am"
+  },
+  "2s0jivfjutjp62rj40aot58018@google.com|2007-08-13 09:00:00-07:00": {
+   "summary": "[AEA] German Summer Camp",
+   "when": "Mon Aug 13, 9:00 am"
+  },
+  "2stnecrvmndsae2bcburm253uf@google.com|2025-08-15 14:05:00-07:00": {
+   "summary": "[PBMS] Early Dismissal",
+   "when": "Fri Aug 15, 2:05 pm"
+  },
+  "2tme4v7645ecc4l8lldfauqeas@google.com|2027-03-08": {
+   "summary": "[PBMS] Non-instructional Day (NO SCHOOL) \u2014 AEA not marked off",
+   "when": "Mon Mar 8"
+  },
+  "36cj9lvtb7t5e0bbe0citqtn59@google.com|2018-06-25 08:00:00-07:00": {
+   "summary": "[AEA] Extended School Year (ESY) program (SpEd)",
+   "when": "Mon Jun 25, 8:00 am"
+  },
+  "3ak7mq7bv5k7anm7vq1bgqeaff@google.com|2026-10-19": {
+   "summary": "[AEA] Minimum days - Parent/Teacher Conferences",
+   "when": "Mon Oct 19 \u2013 Fri Oct 23"
+  },
+  "3dsgp2hli61on46c4iehmeh0ll@google.com|2024-10-21 12:30:00-07:00": {
+   "summary": "[AEA] Scholastic Book Fair in the library (elementary)",
+   "when": "Mon Oct 21, 12:30 pm"
+  },
+  "3g7ahivohkt5frc4o6jqrcr0hi@google.com|2027-03-15": {
+   "summary": "[AEA] Elementary Scholastic Book Fair from March 15-18",
+   "when": "Mon Mar 15 \u2013 Thu Mar 18"
+  },
+  "3mli28cuuek6fi9i2bntsdtlrh@google.com|2027-06-04": {
+   "summary": "[AEA] Spring semester ends",
+   "when": "Fri Jun 4"
+  },
+  "41o6cq8vi9rslhbfhpghl3jor9@google.com|2023-10-16": {
+   "summary": "[AEA] Boss's Day (Annually)",
+   "when": "Mon Oct 16"
+  },
+  "45ssdji37evnn5149e6b7uhbk0@google.com|2025-03-17 15:15:00-07:00": {
+   "summary": "[AEA] Book Fair in the library (elementary)",
+   "when": "Mon Mar 17, 3:15 pm"
+  },
+  "4fmhou2409btrikqj84vfsumts@google.com|2008-05-12": {
+   "summary": "[AEA] Staff Appreciation Days",
+   "when": "Mon May 12"
+  },
+  "4gpr3m604a5pg4i5njs2fg6kek@google.com|2018-05-03 09:25:00-07:00": {
+   "summary": "[AEA] 5 D and E:  A1- German Language Diploma Test",
+   "when": "Thu May 3, 9:25 am"
+  },
+  "4i3et0mkdu2ai0dk303obt8gj8@google.com|2011-01-26 12:30:00-08:00": {
+   "summary": "[AEA] Pizza Fundraiser for Costa Rica Trip",
+   "when": "Wed Jan 26, 12:30 pm"
+  },
+  "4i859lakmvb359o2skarih5ou1@google.com|2027-03-17": {
+   "summary": "[AEA] Minimum days - Parent/Teacher Conferences",
+   "when": "Wed Mar 17 \u2013 Fri Mar 19"
+  },
+  "4l180687iqubrvpjbnj0ahb712@google.com|2025-05-02": {
+   "summary": "[AEA] Annual School Lunch Hero Day",
+   "when": "Fri May 2"
+  },
+  "4l3g1irs9sdmd0j9ghadu4vrc8@google.com|2017-03-20": {
+   "summary": "[AEA] ES Book Fair",
+   "when": "Mon Mar 20"
+  },
+  "4lgea1k431hsi4oiv8eh5m1sta@google.com|2027-01-11": {
+   "summary": "[AEA] Spring semester begins",
+   "when": "Mon Jan 11"
+  },
+  "4o5im7iesb6o6d21963jsesvbm@google.com|2026-10-12": {
+   "summary": "[AEA] Indigenous People's Day - NO SCHOOL \u2014 PBMS not marked off",
+   "when": "Mon Oct 12"
+  },
+  "50n5seh765u09prnccet8meo94@google.com|2018-03-12": {
+   "summary": "[AEA] 2nd Grade Canned Food Drive",
+   "when": "Mon Mar 12 \u2013 Fri Mar 23"
+  },
+  "54hvsbku1ctehe9040auie8iti@google.com|2027-01-05": {
+   "summary": "[PBMS] School Reopens from Winter Break",
+   "when": "Tue Jan 5"
+  },
+  "55f2m8hhf84uhh2gr5a6fdvhm7@google.com|2026-10-19": {
+   "summary": "[AEA] Elementary Scholastic Book Fair October 19-23",
+   "when": "Mon Oct 19 \u2013 Fri Oct 23"
+  },
+  "56tmdoue7lj5hc69ngmhtevg8o@google.com|2016-11-14": {
+   "summary": "[AEA] Minimum Days",
+   "when": "Mon Nov 14"
+  },
+  "5g461cb7685sn2aeb1ut23ogvl@google.com|2027-06-04": {
+   "summary": "[AEA] Last day of school - Minimum day",
+   "when": "Fri Jun 4"
+  },
+  "5igm5ihtc278h78sj5287btrkb@google.com|2026-12-21": {
+   "summary": "[AEA] Winter vacation - NO SCHOOL",
+   "when": "Mon Dec 21 \u2013 Fri Jan 8"
+  },
+  "5lvqfmceh1t2rfqjr2rca5g4ph@google.com|2018-03-06 13:10:00-08:00": {
+   "summary": "[AEA] German Theaterfest 2018",
+   "when": "Tue Mar 6, 1:10 pm"
+  },
+  "5marjamp8omf3u0enud60nlj0l@google.com|2027-05-26": {
+   "summary": "[PBMS] Last Day of School",
+   "when": "Wed May 26"
+  },
+  "5pj0i3ssj9qton0uipn53avevk@google.com|2016-01-25": {
+   "summary": "[AEA] AATG level 2/3 test 4th period",
+   "when": "Mon Jan 25"
+  },
+  "5pj0i3ssj9qton0uipn53avevk_R20160125@google.com|2016-01-25": {
+   "summary": "[AEA] AATG level 2 test 4th period",
+   "when": "Mon Jan 25"
+  },
+  "5s8lopeme7ku40kl2mb88fku3g@google.com|2015-12-21": {
+   "summary": "[AEA] Winter Break \u2014 PBMS not marked off",
+   "when": "Mon Dec 21"
+  },
+  "60p2go8d0ta2912as74t0aiqg4@google.com|2019-03-20": {
+   "summary": "[AEA] Elementary School Walk for Water T-shirt Sales",
+   "when": "Wed Mar 20"
+  },
+  "661bis4mf01uc85b6e9re19sig@google.com|2008-04-21": {
+   "summary": "[AEA] Parent/Teacher Conferences",
+   "when": "Mon Apr 21"
+  },
+  "6atqca1da2he82puenbjfrakt4@google.com|2016-04-21": {
+   "summary": "[AEA] AATG level 1 test - 4th period",
+   "when": "Thu Apr 21"
+  },
+  "6b5t2hmjojslpg90kqhu7k4q9m@google.com|2027-03-29": {
+   "summary": "[BOTH OFF] [PBMS] Spring Break (NO SCHOOL)",
+   "when": "Mon Mar 29 \u2013 Fri Apr 2"
+  },
+  "6g0p5tq3l0q156obofqfli8m55@google.com|2018-10-16": {
+   "summary": "[AEA] \u200bFOAEA Fall Fundraiser",
+   "when": "Tue Oct 16"
+  },
+  "6igjupd5d3dgt0lnop6gj2piro@google.com|2009-03-25": {
+   "summary": "[AEA] German Students from Herderschuele Giessen Coming to AEA",
+   "when": "Wed Mar 25"
+  },
+  "6mh0udhpiltnd0ojd7830hhecg@google.com|2027-04-23 08:30:00-07:00": {
+   "summary": "[AEA] 5th grade graduation pictures",
+   "when": "Fri Apr 23, 8:30 am"
+  },
+  "6q7vc04kjdgv2holdm03f45ag8@google.com|2013-11-07 09:30:00-08:00": {
+   "summary": "[AEA] Elementary school tour for new parents",
+   "when": "Thu Nov 7, 9:30 am"
+  },
+  "6qvdhsabarcb5apg471gg2ai1s@google.com|2026-12-06 16:00:00-08:00": {
+   "summary": "[AEA] Winter Market!!!!!",
+   "when": "Sun Dec 6, 4:00 pm"
+  },
+  "6se6esu2i3ihc3c966h416ukh4@google.com|2026-10-16 08:30:00-07:00": {
+   "summary": "[AEA] ES Picture make-up day",
+   "when": "Fri Oct 16, 8:30 am"
+  },
+  "6smg14t574p29cv6allruoumvi@google.com|2024-02-27 09:30:00-08:00": {
+   "summary": "[AEA] AEACES Kindergarten School Tour in English",
+   "when": "Tue Feb 27, 9:30 am"
+  },
+  "70ni59pvnqh8fit3uau5fn8nor@google.com|2027-04-01": {
+   "summary": "[PBMS] First Day of School Library Month",
+   "when": "Thu Apr 1"
+  },
+  "750hka8c56mufjtnqocdpnshdh@google.com|2018-02-01": {
+   "summary": "[AEA] Live Music Month Assemblies Elementary School - Lunchtime Performances",
+   "when": "Thu Feb 1"
+  },
+  "777nuiv1ogebr8u76plbnrldsg@google.com|2008-04-21": {
+   "summary": "[AEA] Scholastic Bookfair",
+   "when": "Mon Apr 21"
+  },
+  "77oc0ltvsfpvh5etggcsutmhb5@google.com|2018-04-18 08:00:00-07:00": {
+   "summary": "[AEA] 5th grade German Language Exam A2 - Reading Comprehension",
+   "when": "Wed Apr 18, 8:00 am"
+  },
+  "7af17h3vme7h6m3t6kh54j97tt@google.com|2023-05-01": {
+   "summary": "[AEA] Principals' Day (Annually on May 1)",
+   "when": "Mon May 1"
+  },
+  "7bmhp9rggojl6na1u4eranc8ng@google.com|2027-06-19": {
+   "summary": "[PBMS] Juneteenth (confirm)",
+   "when": "Sat Jun 19"
+  },
+  "7i00m2q1b4adhvd7mo7rnbqans@google.com|2026-10-02": {
+   "summary": "[AEA] German Spirit Day Elementary",
+   "when": "Fri Oct 2"
+  },
+  "7i8h3le7qvv9f9jlbmh0l3h8de@google.com|2021-09-15 13:00:00-07:00": {
+   "summary": "[AEA] OPTIONAL Covid testing on each campus (Students and Staff only)",
+   "when": "Wed Sep 15, 1:00 pm"
+  },
+  "7i8h3le7qvv9f9jlbmh0l3h8de_R20220112T210000@google.com|2022-01-12 13:00:00-08:00": {
+   "summary": "[AEA] OPTIONAL Covid testing on each campus (Students and Staff only)",
+   "when": "Wed Jan 12, 1:00 pm"
+  },
+  "7k58tbrioo0cshao6u1q8icv9k@google.com|2018-04-19 08:00:00-07:00": {
+   "summary": "[AEA] 5th grade German Language Exam A2 - Oral Presentation",
+   "when": "Thu Apr 19, 8:00 am"
+  },
+  "7k58tbrioo0cshao6u1q8icv9k_R20180419T150000@google.com|2018-04-19 08:00:00-07:00": {
+   "summary": "[AEA] 5th grade German Language Exam A2 - Oral Presentation",
+   "when": "Thu Apr 19, 8:00 am"
+  },
+  "7kccc2unibb9194jkb2d1s71l0@google.com|2025-10-20 12:30:00-07:00": {
+   "summary": "[AEA] Scholastic Book Fair - Elementary School",
+   "when": "Mon Oct 20, 12:30 pm"
+  },
+  "7no9f3e7vhnnh9vubcfjg0hd6c@google.com|2018-04-16 08:00:00-07:00": {
+   "summary": "[AEA] 5th grade German Language Exam A2 - Listening Comprehension",
+   "when": "Mon Apr 16, 8:00 am"
+  },
+  "7qvencaamb4latfn60f3umb4h3@google.com|2027-03-22": {
+   "summary": "[AEA] Spring vacation - NO SCHOOL",
+   "when": "Mon Mar 22 \u2013 Fri Apr 2"
+  },
+  "8q7rta7kibsppce1mntu6cna88@google.com|2007-08-01 15:00:00-07:00": {
+   "summary": "[AEA] Nunes Uniform Fittings",
+   "when": "Wed Aug 1, 3:00 pm"
+  },
+  "9aocn2qgvt0h4t5vk2pq4tph44@google.com|2017-03-27": {
+   "summary": "[AEA] No School - Spring Break \u2014 PBMS not marked off",
+   "when": "Mon Mar 27"
+  },
+  "9e2e21re7driinhasgs1kdet0g@google.com|2025-10-22 12:30:00-07:00": {
+   "summary": "[AEA] Scholastic Book Fair - Elementary School",
+   "when": "Wed Oct 22, 12:30 pm"
+  },
+  "9li96sgkh5m0brm1n336clkmo4@google.com|2010-10-13 12:40:00-07:00": {
+   "summary": "[AEA] Meditation Initiative - everyone invited!",
+   "when": "Wed Oct 13, 12:40 pm"
+  },
+  "9rjr8cch15t2fnglnq0urvgpoc@google.com|2017-04-20 08:00:00-07:00": {
+   "summary": "[AEA] German Language Diploma Oral exams",
+   "when": "Thu Apr 20, 8:00 am"
+  },
+  "9rjr8cch15t2fnglnq0urvgpoc_R20170420T150000@google.com|2017-04-20 08:00:00-07:00": {
+   "summary": "[AEA] German Language Diploma A2 Oral exams 5th grade",
+   "when": "Thu Apr 20, 8:00 am"
+  },
+  "ap60gunld7hknt3rkuc18qsdn8@google.com|2016-12-19": {
+   "summary": "[AEA] No School - Winter Break \u2014 PBMS not marked off",
+   "when": "Mon Dec 19"
+  },
+  "b3v3ti9gqhjqsem3l5ekpj4dp0@google.com|2007-08-06 09:00:00-07:00": {
+   "summary": "[AEA] German Summer Camp",
+   "when": "Mon Aug 6, 9:00 am"
+  },
+  "both-485d54lqk0jpbk5a0dqtbob8ne@google.com|2027-02-15": {
+   "summary": "[BOTH OFF] Presidents' Day - NO SCHOOL",
+   "when": "Mon Feb 15"
+  },
+  "both-4iij6n92eqk5a9siv20i4bbk1k@google.com|2026-11-23": {
+   "summary": "[BOTH OFF] Fall vacation - NO SCHOOL",
+   "when": "Mon Nov 23 \u2013 Fri Nov 27"
+  },
+  "both-4ub19jvs1jq28rcc8viu3mriu5@google.com|2026-11-11": {
+   "summary": "[BOTH OFF] Veterans' Day - NO SCHOOL (PBMS: confirm)",
+   "when": "Wed Nov 11"
+  },
+  "both-6e2hmbq5vddamrc87b7qubfksr@google.com|2027-02-12": {
+   "summary": "[BOTH OFF] Presidents' Day - NO SCHOOL",
+   "when": "Fri Feb 12"
+  },
+  "both-74q3q0co23o49d6qlbkn3bp4ah@google.com|2027-01-18": {
+   "summary": "[BOTH OFF] Martin Luther King Jr. Day - NO SCHOOL",
+   "when": "Mon Jan 18"
+  },
+  "both-796e94ahjqgies19fj4pqakokk@google.com|2027-05-31": {
+   "summary": "[BOTH OFF] Memorial Day - NO SCHOOL (PBMS: confirm)",
+   "when": "Mon May 31"
+  },
+  "bqr0sg4qvv7o6qb2sm84lkkmss@google.com|2011-05-18 12:40:00-07:00": {
+   "summary": "[AEA] Meditation Initiative - everyone invited!",
+   "when": "Wed May 18, 12:40 pm"
+  },
+  "cta677844guve3ancpnenvgfo4@google.com|2012-05-15 14:30:00-07:00": {
+   "summary": "[AEA] [FoAEA] Gala Ticket Sales",
+   "when": "Tue May 15, 2:30 pm"
+  },
+  "cvf7cdqcrkvj5hgitll0qgguc0@google.com|2016-11-03 09:30:00-07:00": {
+   "summary": "[AEA] Elementary School Tour for prospective Kindergarten Parents",
+   "when": "Thu Nov 3, 9:30 am"
+  },
+  "dhha2cendnkrd94b9dvfc30rfg@google.com|2016-03-10 13:30:00-08:00": {
+   "summary": "[AEA] First AEA German Theater festival - two day event",
+   "when": "Thu Mar 10, 1:30 pm"
+  },
+  "dqil3olj54oranvj27b5puihqo@google.com|2013-09-20 07:15:00-07:00": {
+   "summary": "[AEA] German O Period with Frau Paulsen",
+   "when": "Fri Sep 20, 7:15 am"
+  },
+  "dv0eb8fbls2qic35kcnm12tub8@google.com|2012-09-19 08:15:00-07:00": {
+   "summary": "[AEA] Breakfast Club",
+   "when": "Wed Sep 19, 8:15 am"
+  },
+  "e2au0ov1sljr09vttijib34vrg@google.com|2007-12-03": {
+   "summary": "[AEA] Parent/Teacher Conferences",
+   "when": "Mon Dec 3"
+  },
+  "e5ovvif1iurho4u0ecbqebo6u0@google.com|2017-03-20": {
+   "summary": "[AEA] Minimum Days - Elementary school only",
+   "when": "Mon Mar 20"
+  },
+  "e8jr1235mlu9l6i0akei24jil4@google.com|2016-04-28 08:00:00-07:00": {
+   "summary": "[AEA] 5D German Language Diploma A1 Exam - Oral section",
+   "when": "Thu Apr 28, 8:00 am"
+  },
+  "enn2n1o46kh9iaeq5nt8rvjl24@google.com|2015-11-23": {
+   "summary": "[AEA] No School \u2014 PBMS not marked off",
+   "when": "Mon Nov 23"
+  },
+  "fqadvdu491m258ijcs447osj80@google.com|2016-03-14": {
+   "summary": "[AEA] ES ONLY- Parent Teacher Conferences - Minimum Days",
+   "when": "Mon Mar 14"
+  },
+  "h9b607s0939l4v1a8q7h945fc0@google.com|2016-03-14 08:00:00-07:00": {
+   "summary": "[AEA] AEA Bookfair ES library",
+   "when": "Mon Mar 14, 8:00 am"
+  },
+  "hn14gjpctmpmhc1ghm3rh9fm00@google.com|2011-11-15 12:30:00-08:00": {
+   "summary": "[AEA] 3rd-5th Lunch League Flag Football Championship Game",
+   "when": "Tue Nov 15, 12:30 pm"
+  },
+  "hqrpnpad6g8gulb9gd1oln07sv@google.com|2025-10-23 12:30:00-07:00": {
+   "summary": "[AEA] Scholastic Book Fair - Elementary School",
+   "when": "Thu Oct 23, 12:30 pm"
+  },
+  "igiinao6klaqkko0bhuj5cifcg@google.com|2012-09-11 14:30:00-07:00": {
+   "summary": "[AEA] Pretzel Sales",
+   "when": "Tue Sep 11, 2:30 pm"
+  },
+  "ivsfvooh9pkqdc7b9idmganae0@google.com|2012-09-05 08:20:00-07:00": {
+   "summary": "[AEA] [FoAEA] Pastries with the Principals",
+   "when": "Wed Sep 5, 8:20 am"
+  },
+  "jrkt7jjk26h5ilmu0h0md2ant4@google.com|2013-09-24 07:15:00-07:00": {
+   "summary": "[AEA] Spanish 0 Period with Srta. Morales",
+   "when": "Tue Sep 24, 7:15 am"
+  },
+  "kc7o2og6fjuh323jskdrdosk5k@google.com|2014-10-01 08:30:00-07:00": {
+   "summary": "[AEA] Pastries with the Principals",
+   "when": "Wed Oct 1, 8:30 am"
+  },
+  "koahngjnukiufckom87520442c@google.com|2017-04-17 08:30:00-07:00": {
+   "summary": "[AEA] German language diploma A2 written exam 5b and 5c",
+   "when": "Mon Apr 17, 8:30 am"
+  },
+  "koahngjnukiufckom87520442c_R20170417T153000@google.com|2017-04-17 08:30:00-07:00": {
+   "summary": "[AEA] German language diploma A2 written exam 5a and 5c",
+   "when": "Mon Apr 17, 8:30 am"
+  },
+  "l1unhai0ckcivus4a7vp14h9mo@google.com|2013-09-16": {
+   "summary": "[AEA] School Pictures",
+   "when": "Mon Sep 16"
+  },
+  "l643s1gnosgeoviiitan0k4264@google.com|2013-09-04 08:20:00-07:00": {
+   "summary": "[AEA] Pastries with the Principal",
+   "when": "Wed Sep 4, 8:20 am"
+  },
+  "mhgujotohmis9dl05o0e432ipk@google.com|2008-04-21": {
+   "summary": "[AEA] Minimum Day",
+   "when": "Mon Apr 21"
+  },
+  "mmsg21v4e3o5lfk714d9c57v4k@google.com|2016-11-14": {
+   "summary": "[AEA] ES Book Fair",
+   "when": "Mon Nov 14 \u2013 Tue Nov 15"
+  },
+  "moa0v5p0go4p8bb7fietbl0iu0@google.com|2016-11-14": {
+   "summary": "[AEA] Parent Teacher Conferences",
+   "when": "Mon Nov 14"
+  },
+  "mpm535u1u2bab5ugln0dvdmrrg@google.com|2015-11-03 09:30:00-08:00": {
+   "summary": "[AEA] Elementary School Tours for new families",
+   "when": "Tue Nov 3, 9:30 am"
+  },
+  "ndvo318apv2har8smosoka3ai4@google.com|2007-12-03": {
+   "summary": "[AEA] Minimum Day Schedule",
+   "when": "Mon Dec 3"
+  },
+  "olikt70996qst5lf8lv91eud1s@google.com|2014-11-13 09:30:00-08:00": {
+   "summary": "[AEA] Elementary School Tour",
+   "when": "Thu Nov 13, 9:30 am"
+  },
+  "olikt70996qst5lf8lv91eud1s_R20141113T173000@google.com|2014-11-13 09:30:00-08:00": {
+   "summary": "[AEA] Elementary School Tour for Prospective Parents",
+   "when": "Thu Nov 13, 9:30 am"
+  },
+  "only-AEA-2027-01-05|2027-01-05": {
+   "summary": "[AEA ONLY OFF] PBMS is in school Jan 5\u2013Jan 8",
+   "when": "Tue Jan 5 \u2013 Fri Jan 8"
+  },
+  "only-AEA-2027-03-22|2027-03-22": {
+   "summary": "[AEA ONLY OFF] PBMS is in school Mar 22\u2013Mar 26",
+   "when": "Mon Mar 22 \u2013 Fri Mar 26"
+  },
+  "orbd6hbilitoifvncmc2ut8fvk@google.com|2009-01-10 09:00:00-08:00": {
+   "summary": "[AEA] Garden with your family at AEA",
+   "when": "Sat Jan 10, 9:00 am"
+  },
+  "ou1smocaufi3v4lft92qkup2es@google.com|2025-03-18 15:15:00-07:00": {
+   "summary": "[AEA] Book Fair in the library (elementary)",
+   "when": "Tue Mar 18, 3:15 pm"
+  },
+  "pa5l5cvj54l5ln1040dqf5n364@google.com|2013-09-24 15:00:00-07:00": {
+   "summary": "[AEA] Spanish O Period  1/2 with Srta. Morales",
+   "when": "Tue Sep 24, 3:00 pm"
+  },
+  "pe9s41ra2l2v1cbgajmu20ett4@google.com|2017-03-20": {
+   "summary": "[AEA] Parent Teacher Conferences ES only",
+   "when": "Mon Mar 20"
+  },
+  "pf263b5apsplhn3d4rms60g48o@google.com|2011-01-20 12:30:00-08:00": {
+   "summary": "[AEA] Pizza Fundraiser fro Costa Rica Trip",
+   "when": "Thu Jan 20, 12:30 pm"
+  },
+  "pffho8chdfejon9um6h49fmd08@google.com|2011-10-21 14:45:00-07:00": {
+   "summary": "[AEA] [FoAEA] Lantern Festival Advance Ticket Sales",
+   "when": "Fri Oct 21, 2:45 pm"
+  },
+  "pljsk0eod1dm954jhmktaqs9gc@google.com|2017-04-24 08:30:00-07:00": {
+   "summary": "[AEA] German language diploma A2  written exam 5 a",
+   "when": "Mon Apr 24, 8:30 am"
+  },
+  "pljsk0eod1dm954jhmktaqs9gc_R20170424T153000@google.com|2017-04-24 08:30:00-07:00": {
+   "summary": "[AEA] German language diploma A2  written exam 5 b",
+   "when": "Mon Apr 24, 8:30 am"
+  },
+  "pqqn6t8ti1t8d8jau1abflan8o@google.com|2011-10-02 16:00:00-07:00": {
+   "summary": "[AEA] [FoAEA] Gardening Work Days",
+   "when": "Sun Oct 2, 4:00 pm"
+  },
+  "r0knll5puucghige8nuej0m5ko@google.com|2015-01-15 09:30:00-08:00": {
+   "summary": "[AEA] Elementary School Tour for Prospective Parents",
+   "when": "Thu Jan 15, 9:30 am"
+  },
+  "rbgl0f7a7v793hna97vhdri7bc@google.com|2011-09-21 08:30:00-07:00": {
+   "summary": "[AEA] [FoAEA] Breakfast Club",
+   "when": "Wed Sep 21, 8:30 am"
+  },
+  "s04o2258u8f7c61f0svvibnlu4@google.com|2011-11-01": {
+   "summary": "[AEA] School Tours - Elementary and Middle",
+   "when": "Tue Nov 1"
+  },
+  "s6hj4el7gukve3e5slfrobamhc@google.com|2017-01-12 09:30:00-08:00": {
+   "summary": "[AEA] Elementary School Tour for prospective Kindergarten Parents",
+   "when": "Thu Jan 12, 9:30 am"
+  },
+  "sbl50c0jo34tu0bofngp2504qk@google.com|2016-10-24 08:30:00-07:00": {
+   "summary": "[AEA] Kiepenkasper - German Puppet Show",
+   "when": "Mon Oct 24, 8:30 am"
+  },
+  "sq0i0ao893ririknnkelhbbdr8@google.com|2012-04-19 14:45:00-07:00": {
+   "summary": "[AEA] (3rd-5th) Soccer Lunch League Sign-ups Due",
+   "when": "Thu Apr 19, 2:45 pm"
+  },
+  "sqp593nkdvj84lvhn20p9sq0ts@google.com|2013-09-23 15:00:00-07:00": {
+   "summary": "[AEA] EXCEL",
+   "when": "Mon Sep 23, 3:00 pm"
+  },
+  "t5rosckb2rbiehrggveus0liis@google.com|2008-12-01": {
+   "summary": "[AEA] Parent/Teacher Conferences-Minimum Day Schedule",
+   "when": "Mon Dec 1"
+  },
+  "u04jvc48ctu9o36866ptaks97g@google.com|2017-02-17": {
+   "summary": "[AEA] No School \u2014 PBMS not marked off",
+   "when": "Fri Feb 17"
+  },
+  "u6amd0rnalsftgt1v1528pk8vs@google.com|2009-01-08 17:30:00-08:00": {
+   "summary": "[AEA] Parent University",
+   "when": "Thu Jan 8, 5:30 pm"
+  },
+  "u8usur0qv89kfeulre39vdhk5c@google.com|2013-09-24 15:00:00-07:00": {
+   "summary": "[AEA] German O Period Frau Davis",
+   "when": "Tue Sep 24, 3:00 pm"
+  },
+  "uc13ng6b933bksie3bpf58473s@google.com|2011-11-06 08:00:00-08:00": {
+   "summary": "[AEA] The 15th Annual Komen San Diego Race for the Cure 5K Run/Walk",
+   "when": "Sun Nov 6, 8:00 am"
+  },
+  "uptid963oluohrgec0lgloklhc_R20161121@google.com|2016-11-21": {
+   "summary": "[AEA] No School - Fall Break \u2014 PBMS not marked off",
+   "when": "Mon Nov 21"
+  },
+  "vaauatb9ka2ggoi3q7o0vluobs@google.com|2011-12-06 11:00:00-08:00": {
+   "summary": "[AEA] Progress Fusion Fundraiser 'Black Tuesday'",
+   "when": "Tue Dec 6, 11:00 am"
+  },
+  "vcd10mnar8mcb6ilepj59uf1i4@google.com|2016-03-21": {
+   "summary": "[AEA] Spring Break \u2014 PBMS not marked off",
+   "when": "Mon Mar 21"
+  },
+  "vv3hjr1nm705b5g8gtmq7gnvqc@google.com|2009-09-11": {
+   "summary": "[AEA] Recycling",
+   "when": "Fri Sep 11"
+  }
+ },
+ "last_changed": "Sun Oct 11, 2026 at 11:58 AM PDT",
+ "last_changes": []
+}

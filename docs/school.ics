@@ -1,0 +1,1718 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//school-calendar//curated AEA + PBMS//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:School (AEA + PBMS)
+X-WR-TIMEZONE:America/Los_Angeles
+X-WR-CALDESC:Curated: days off\, minimum days\, conferences and family even
+ ts.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:8q7rta7kibsppce1mntu6cna88@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20070801T220000Z
+DTEND:20070802T020000Z
+SUMMARY:[AEA] Nunes Uniform Fittings
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20070802T220000Z
+LOCATION:In front of School on Ash Street
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b3v3ti9gqhjqsem3l5ekpj4dp0@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20070806T160000Z
+DTEND:20070806T193000Z
+SUMMARY:[AEA] German Summer Camp
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20070810T160000Z
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2s0jivfjutjp62rj40aot58018@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20070813T160000Z
+DTEND:20070813T193000Z
+SUMMARY:[AEA] German Summer Camp
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20070817T160000Z
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:03qqeeblq7e4hoev6hf87rpe3s@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20071024
+DTEND;VALUE=DATE:20071025
+SUMMARY:[AEA] Red Ribbon Days
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20071026
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ndvo318apv2har8smosoka3ai4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20071203
+DTEND;VALUE=DATE:20071204
+SUMMARY:[AEA] Minimum Day Schedule
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20071207
+DESCRIPTION:School will be letting out everyday at 12:00 p.m. for Kindergar
+ ten and 12:30 for the remaining student body to accommodate Parent/Teacher
+  Conferences.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e2au0ov1sljr09vttijib34vrg@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20071203
+DTEND;VALUE=DATE:20071204
+SUMMARY:[AEA] Parent/Teacher Conferences
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20071207
+DESCRIPTION:Teachers will be scheduling appointments for parents to meet wi
+ th them during the week to discuss student progress.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:00iv0ccb12bdt3l9hshmu13cpg@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20071203
+DTEND;VALUE=DATE:20071204
+SUMMARY:[AEA] Scholastic Bookfair
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20071206
+DESCRIPTION:The Library will be hosting the Scholastic Bookfair before and 
+ after school. Students will have the opportunity to go to the Bookfair dur
+ ing the day to pick out the books they like.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1fvihkmereedn1mgcq2r9mkr88@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20080128
+DTEND;VALUE=DATE:20080129
+SUMMARY:[AEA] 4th Grade Field Trip to Old Town
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20080201;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mhgujotohmis9dl05o0e432ipk@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20080421
+DTEND;VALUE=DATE:20080422
+SUMMARY:[AEA] Minimum Day
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20080425
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:661bis4mf01uc85b6e9re19sig@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20080421
+DTEND;VALUE=DATE:20080422
+SUMMARY:[AEA] Parent/Teacher Conferences
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20080425;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:777nuiv1ogebr8u76plbnrldsg@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20080421
+DTEND;VALUE=DATE:20080422
+SUMMARY:[AEA] Scholastic Bookfair
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20080424
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4fmhou2409btrikqj84vfsumts@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20080512
+DTEND;VALUE=DATE:20080513
+SUMMARY:[AEA] Staff Appreciation Days
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20080516
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:t5rosckb2rbiehrggveus0liis@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20081201
+DTEND;VALUE=DATE:20081202
+SUMMARY:[AEA] Parent/Teacher Conferences-Minimum Day Schedule
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20081205
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0g93enh6g6uqmkrufqvv9lqfo8@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20081201T163000Z
+DTEND:20081201T213000Z
+SUMMARY:[AEA] Scholastic Bookfair
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20081205T163000Z
+LOCATION:MPR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:u6amd0rnalsftgt1v1528pk8vs@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20090109T013000Z
+DTEND:20090109T030000Z
+SUMMARY:[AEA] Parent University
+RRULE:FREQ=MONTHLY;WKST=SU;UNTIL=20090612T003000Z;BYDAY=2TH
+LOCATION:MPR
+DESCRIPTION:An opportunity for elementary and middle school parents to lear
+ n about relevant school-related topics.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:orbd6hbilitoifvncmc2ut8fvk@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20090110T170000Z
+DTEND:20090110T190000Z
+SUMMARY:[AEA] Garden with your family at AEA
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20090523T160000Z;BYDAY=SA
+LOCATION:A Street Gate
+DESCRIPTION:Here is your chance to not only have fun with your family\, but
+  help beautify our campus. Come to the A Street gate and help with the gar
+ dening. Any questions\, please call 619-237-8870 or email sjagitator@ucsd.
+ edu.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6igjupd5d3dgt0lnop6gj2piro@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20090325
+DTEND;VALUE=DATE:20090326
+SUMMARY:[AEA] German Students from Herderschuele Giessen Coming to AEA
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20090409
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:vv3hjr1nm705b5g8gtmq7gnvqc@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20090911
+DTEND;VALUE=DATE:20090912
+SUMMARY:[AEA] Recycling
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20100618;BYDAY=FR
+DESCRIPTION:Bring your cans\, plastic and glass bottles to the front or bac
+ k gates before school every Friday morning for recycling.  Proceeds will b
+ enefit the AEA beautification committee's efforts to improve our campus!
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0l7k12ujk1g29mf008m304pehk@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20091026
+DTEND;VALUE=DATE:20091027
+SUMMARY:[AEA] Scholastic Book Fair
+RRULE:FREQ=DAILY;WKST=SU;UNTIL=20091030
+LOCATION:Library
+DESCRIPTION:Stop by the school library to check out the Book Fair!  This is
+  an opportunity to purchase books while helping the school earn money.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2845omf04ohvhjemqc0plsth40@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20100111T163000Z
+DTEND:20100111T180000Z
+SUMMARY:[AEA] Principal Vaughn's Academic Office Hours
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20100614T153000Z;BYDAY=MO
+DESCRIPTION:Students in grades K-5 may be sent to the Principal's office du
+ ring this time to showcase an academic achievement.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9li96sgkh5m0brm1n336clkmo4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20101013T194000Z
+DTEND:20101013T200000Z
+SUMMARY:[AEA] Meditation Initiative - everyone invited!
+RRULE:FREQ=WEEKLY;UNTIL=20110518T065959Z;BYDAY=WE
+LOCATION:B38 - Mrs. Small's classroom
+DESCRIPTION:all are welcome to join us for meditation time after school eac
+ h Wednesday.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pf263b5apsplhn3d4rms60g48o@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20110120T203000Z
+DTEND:20110120T211500Z
+SUMMARY:[AEA] Pizza Fundraiser fro Costa Rica Trip
+RRULE:FREQ=WEEKLY;UNTIL=20110126T075959Z;BYDAY=WE,TH
+LOCATION:lunch arbor
+DESCRIPTION:Pizza by the Slice sold in the lunch arbor.\n$1.50 a slice- pep
+ peroni or cheese\n$2.00 with beverage\nProceeds to benefit the Costa Rica 
+ trip.\nPlease support your Middle School travelers. 
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4i3et0mkdu2ai0dk303obt8gj8@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20110126T203000Z
+DTEND:20110126T211500Z
+SUMMARY:[AEA] Pizza Fundraiser for Costa Rica Trip
+RRULE:FREQ=WEEKLY;UNTIL=20110608T193000Z;BYDAY=WE
+LOCATION:lunch arbor
+DESCRIPTION:Pizza by the Slice sold in the lunch arbor.\n$1.50 a slice- pep
+ peroni or cheese\n$2.00 with beverage\nProceeds to benefit the Costa Rica 
+ trip.\nPlease support your Middle School travelers. 
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bqr0sg4qvv7o6qb2sm84lkkmss@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20110518T194000Z
+DTEND:20110518T200000Z
+SUMMARY:[AEA] Meditation Initiative - everyone invited!
+RRULE:FREQ=WEEKLY;UNTIL=20110608T194000Z;BYDAY=WE
+LOCATION:Frau Holts room
+DESCRIPTION:all are welcome to join us for meditation time after school eac
+ h Wednesday.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:rbgl0f7a7v793hna97vhdri7bc@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20110921T153000Z
+DTEND:20110921T180000Z
+SUMMARY:[AEA] [FoAEA] Breakfast Club
+RRULE:FREQ=MONTHLY;UNTIL=20120620T153000Z;BYDAY=3WE
+LOCATION:Staff lounge
+DESCRIPTION:Let’s help the teachers with their classroom work!\n\nCome fo
+ r coffee\, muffins\, fruit and great conversation (Breakfast provided by t
+ he Friends of AEA).\n\nWe will be: Copying\, Laminating\, Cutting\, Stapli
+ ng…and anything else to help our wonderful teachers.\n \nThe 3rd Wednesd
+ ay of every month in the Teachers lounge from 8:15-12:00\n\nCome for an ho
+ ur or come for the morning\, it’s a fun way to log some volunteer time.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pqqn6t8ti1t8d8jau1abflan8o@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20111002T230000Z
+DTEND:20111003T000000Z
+SUMMARY:[AEA] [FoAEA] Gardening Work Days
+RRULE:FREQ=MONTHLY;UNTIL=20120603T230000Z;BYDAY=1SU
+LOCATION:AEA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pffho8chdfejon9um6h49fmd08@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20111021T214500Z
+DTEND:20111021T221500Z
+SUMMARY:[AEA] [FoAEA] Lantern Festival Advance Ticket Sales
+RRULE:FREQ=WEEKLY;UNTIL=20111104T214500Z;BYDAY=WE,FR
+DESCRIPTION:Prices\n$1 per ticket sold in groups of 5\n5 tickets = $5\n10 t
+ ickets = $10\n25 tickets = $20*\n* Special price if purchased before lante
+ rn festival\n\nAdvanced Sales\nBefore and after school on\nOctober 21st\, 
+ 26th\, 28th and November 2nd and 4th\n\nStein Contest\n$1 per raffle ticke
+ t\nGrand prize is a basket of“German Goodies”
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:s04o2258u8f7c61f0svvibnlu4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20111101
+DTEND;VALUE=DATE:20111102
+SUMMARY:[AEA] School Tours - Elementary and Middle
+RRULE:FREQ=WEEKLY;COUNT=13;BYDAY=TU
+LOCATION:front office
+DESCRIPTION:Middle School tour begins at 9am\, Elementary at 10am.  Please 
+ call the office at 795-1190 to reserve your spot on the tour.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:uc13ng6b933bksie3bpf58473s@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20111106T160000Z
+DTEND:20111106T170000Z
+SUMMARY:[AEA] The 15th Annual Komen San Diego Race for the Cure 5K Run/Walk
+RRULE:FREQ=YEARLY;UNTIL=20111106T160000Z
+DESCRIPTION:    Join the many thousands in the fight against breast cancer\
+ , benefiting the Susan G. Komen Breast Cancer Foundation. Additional infor
+ mation on website at:\nwww.komensandiego.org\n    Adult: $35\, Children: $
+ 23\n\n    Balboa Park\, San Diego (near 6th and Quince) Starts on the West
+  side of Balboa Park on 6th Avenue at the corner of Maple.\n    Elem Stude
+ nts who run this race will also get 30 running club sticks! If you are mot
+ ivated by the sticks but would rather not purchase registration\, then run
+  3 miles in Balboa Park on your own that weekend & get a parent signature 
+ that you ran.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hn14gjpctmpmhc1ghm3rh9fm00@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20111115T203000Z
+DTEND:20111115T210000Z
+SUMMARY:[AEA] 3rd-5th Lunch League Flag Football Championship Game
+RRULE:FREQ=YEARLY;UNTIL=20131115T203000Z
+DESCRIPTION:Top Lunch League seeds participate in the championship game. Th
+ e winning team has their picture taken and posted on the 'Einstein Wall of
+  Champions.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:vaauatb9ka2ggoi3q7o0vluobs@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20111206T190000Z
+DTEND:20111207T050000Z
+SUMMARY:[AEA] Progress Fusion Fundraiser 'Black Tuesday'
+RRULE:FREQ=YEARLY;UNTIL=20131206T190000Z
+DESCRIPTION:    15% of all proceeds go to Fusion Physical Education Enrichm
+ ent.\n    Do your Holiday Shopping at Progress Home & Gift Store!\n    222
+ 5 30th St. \nJust Blocks away from AEA.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1mll5ea669u1gcvhsnj0vqv9s0@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20120126T224500Z
+DTEND:20120126T231500Z
+SUMMARY:[AEA] (3-5th) Basketball Lunch League Sign-ups Due
+RRULE:FREQ=YEARLY;UNTIL=20140126T224500Z
+DESCRIPTION:      Registration Forms Due today. If your child would like to
+  participate in our Lunch League Sports League they must fill out the play
+ er registration form. Go to Mr. Nassif's website and Submit Online or Prin
+ t & turn in. \nONLY TURN IN FORM FOR THE UPCOMING SPORT SEASON\nAccepting 
+ Registration Forms: One month before season starts\nRegistration Forms DUE
+ : The week before the season starts\nLeague Fees: None! It’s Free!\n\n  
+   Assigned teams will then be posted outside of the fitness center.\n    G
+ ame Times: Tuesdays & Thursdays- 12:15-12:35.\n    Free tournament schedul
+ ed games during their lunch recess time. Top teams participate in the cham
+ pionship game. The winning team has their picture taken and posted on the 
+ 'Einstein Wall of Champions.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sq0i0ao893ririknnkelhbbdr8@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20120419T214500Z
+DTEND:20120419T221500Z
+SUMMARY:[AEA] (3rd-5th) Soccer Lunch League Sign-ups Due
+RRULE:FREQ=YEARLY;UNTIL=20130419T214500Z
+DESCRIPTION:       Registration Forms Due today. If your child would like t
+ o participate in our Lunch League Sports League they must fill out the pla
+ yer registration form. Go to Mr. Nassif's website and Submit Online or Pri
+ nt & turn in. \nONLY TURN IN FORM FOR THE UPCOMING SPORT SEASON\nAccepting
+  Registration Forms: One month before season starts\nRegistration Forms DU
+ E: The week before the season starts\nLeague Fees: None! It’s Free!\n\n 
+    Assigned teams will then be posted outside of the fitness center.\n    
+ Game Times: Tuesdays & Thursdays- 12:15-12:35.\n    Free tournament schedu
+ led games during their lunch recess time. Top teams participate in the cha
+ mpionship game. The winning team has their picture taken and posted on the
+  'Einstein Wall of Champions.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cta677844guve3ancpnenvgfo4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20120515T213000Z
+DTEND:20120515T223000Z
+SUMMARY:[AEA] [FoAEA] Gala Ticket Sales
+RRULE:FREQ=WEEKLY;COUNT=3;BYDAY=TU
+LOCATION:AEA back gate and pretzel table
+DESCRIPTION:Buy tickets to the 2012 Annual Gala. Only checks and cash accep
+ ted in person. To pay by credit card\, go to https://friendsofaea.ejoinme.
+ org/MyEvents/Auction2012/Registration/tabid/356349/Default.aspx
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2dk15kssf322gevs2728t9uugo@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20120518T144500Z
+DTEND:20120518T151500Z
+SUMMARY:[AEA] [FoAEA] Gala Ticket Sales
+RRULE:FREQ=WEEKLY;COUNT=2;BYDAY=FR
+LOCATION:AEA back and front gates
+DESCRIPTION:Buy tickets to the 2012 Annual Gala. Only checks and cash accep
+ ted in person. To pay by credit card\, go to https://friendsofaea.ejoinme.
+ org/MyEvents/Auction2012/Registration/tabid/356349/Default.aspx
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ivsfvooh9pkqdc7b9idmganae0@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20120905T152000Z
+DTEND:20120905T162000Z
+SUMMARY:[AEA] [FoAEA] Pastries with the Principals
+RRULE:FREQ=MONTHLY;COUNT=10;BYDAY=1WE
+LOCATION:MPR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:igiinao6klaqkko0bhuj5cifcg@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20120911T213000Z
+DTEND:20120911T223000Z
+SUMMARY:[AEA] Pretzel Sales
+RRULE:FREQ=WEEKLY;UNTIL=20130618T213000Z;BYDAY=TU
+LOCATION:AEA
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dv0eb8fbls2qic35kcnm12tub8@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20120919T151500Z
+DTEND:20120919T193000Z
+SUMMARY:[AEA] Breakfast Club
+RRULE:FREQ=MONTHLY;UNTIL=20130116T161500Z;BYDAY=3WE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1kertio87shu1f91uitk9a6dh4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20121108T173000Z
+DTEND:20121108T183000Z
+SUMMARY:[AEA] Elementary school tour for prospective new parents
+RRULE:FREQ=WEEKLY;UNTIL=20130228T173000Z;BYDAY=TH
+DESCRIPTION:Reservation necessary.\nPlease make a reservation at (619) 795 
+ 1190.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:l643s1gnosgeoviiitan0k4264@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20130904T152000Z
+DTEND:20130904T162000Z
+SUMMARY:[AEA] Pastries with the Principal
+RRULE:FREQ=WEEKLY;UNTIL=20140806T152000Z;INTERVAL=4;BYDAY=WE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:l1unhai0ckcivus4a7vp14h9mo@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20130916
+DTEND;VALUE=DATE:20130917
+SUMMARY:[AEA] School Pictures
+RRULE:FREQ=DAILY;COUNT=3
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dqil3olj54oranvj27b5puihqo@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20130920T141500Z
+DTEND:20130920T150000Z
+SUMMARY:[AEA] German O Period with Frau Paulsen
+RRULE:FREQ=WEEKLY;UNTIL=20131011T141500Z;BYDAY=TH,FR
+LOCATION:Room B 40
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sqp593nkdvj84lvhn20p9sq0ts@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20130923T220000Z
+DTEND:20130923T230000Z
+SUMMARY:[AEA] EXCEL
+RRULE:FREQ=WEEKLY;UNTIL=20140619T220000Z;BYDAY=MO,TU,TH
+LOCATION:Frau Bohl's room - media center
+DESCRIPTION:middle school
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:jrkt7jjk26h5ilmu0h0md2ant4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20130924T141500Z
+DTEND:20130924T150000Z
+SUMMARY:[AEA] Spanish 0 Period with Srta. Morales
+RRULE:FREQ=WEEKLY;UNTIL=20131010T141500Z;BYDAY=TU,TH
+LOCATION:B27
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:u8usur0qv89kfeulre39vdhk5c@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20130924T220000Z
+DTEND:20130924T224500Z
+SUMMARY:[AEA] German O Period Frau Davis
+RRULE:FREQ=WEEKLY;UNTIL=20131011T220000Z;BYDAY=TU,FR
+LOCATION:B17 (Frau Ronke /Frau Koenemund's room)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pa5l5cvj54l5ln1040dqf5n364@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20130924T220000Z
+DTEND:20130924T224500Z
+SUMMARY:[AEA] Spanish O Period  1/2 with Srta. Morales
+RRULE:FREQ=WEEKLY;UNTIL=20131010T220000Z;BYDAY=TU,TH
+LOCATION:Room B27
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6q7vc04kjdgv2holdm03f45ag8@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20131107T173000Z
+DTEND:20131107T183000Z
+SUMMARY:[AEA] Elementary school tour for new parents
+RRULE:FREQ=WEEKLY;UNTIL=20140130T173000Z;BYDAY=TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:kc7o2og6fjuh323jskdrdosk5k@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20141001T153000Z
+DTEND:20141001T163000Z
+SUMMARY:[AEA] Pastries with the Principals
+RRULE:FREQ=MONTHLY;UNTIL=20160706T153000Z;BYDAY=1WE
+LOCATION:Elementary Campus 3035 Ash Street
+DESCRIPTION:Monthly update with both principals to keep parents informed. C
+ asual forum to discuss school items.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:olikt70996qst5lf8lv91eud1s@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20141113T173000Z
+DTEND:20141113T183000Z
+SUMMARY:[AEA] Elementary School Tour
+RRULE:FREQ=WEEKLY;UNTIL=20141113T075959Z;BYDAY=TH
+DESCRIPTION:Please call the office to make a reservation: (619) 795 1190 #2
+ 105\n
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:olikt70996qst5lf8lv91eud1s_R20141113T173000@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20141113T173000Z
+DTEND:20141113T183000Z
+SUMMARY:[AEA] Elementary School Tour for Prospective Parents
+RRULE:FREQ=WEEKLY;UNTIL=20141218T173000Z;BYDAY=TH
+DESCRIPTION:Please call the office to make a reservation: (619) 795 1190 #2
+ 105\n
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:r0knll5puucghige8nuej0m5ko@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20150115T173000Z
+DTEND:20150115T183000Z
+SUMMARY:[AEA] Elementary School Tour for Prospective Parents
+RRULE:FREQ=WEEKLY;UNTIL=20150226T173000Z;BYDAY=TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mpm535u1u2bab5ugln0dvdmrrg@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20151103T173000Z
+DTEND:20151103T183000Z
+SUMMARY:[AEA] Elementary School Tours for new families
+RRULE:FREQ=WEEKLY;UNTIL=20160223T173000Z;BYDAY=TU
+LOCATION:ES campus at 3035 Ash Street San Diego CA 92102
+DESCRIPTION:Since our school tours are filling up fast and we would like to
+  keep the tour groups small\nplease RSVP at (619) 795 1190 #2101 or e-mail
+  Mrs McCreary at jmccreary@aeacs.org.\nAdults only please.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:enn2n1o46kh9iaeq5nt8rvjl24@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20151123
+DTEND;VALUE=DATE:20151124
+SUMMARY:[AEA] No School — PBMS not marked off
+RRULE:FREQ=WEEKLY;UNTIL=20151127;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5s8lopeme7ku40kl2mb88fku3g@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20151221
+DTEND;VALUE=DATE:20151222
+SUMMARY:[AEA] Winter Break — PBMS not marked off
+RRULE:FREQ=WEEKLY;UNTIL=20160108;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5pj0i3ssj9qton0uipn53avevk_R20160125@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20160125
+DTEND;VALUE=DATE:20160126
+SUMMARY:[AEA] AATG level 2 test 4th period
+RRULE:FREQ=WEEKLY;UNTIL=20160128;BYDAY=MO,TH
+DESCRIPTION:8th grade students
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5pj0i3ssj9qton0uipn53avevk@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20160125
+DTEND;VALUE=DATE:20160126
+SUMMARY:[AEA] AATG level 2/3 test 4th period
+RRULE:FREQ=WEEKLY;UNTIL=20160124;BYDAY=MO,TH
+DESCRIPTION:8th grade students
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dhha2cendnkrd94b9dvfc30rfg@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20160310T213000Z
+DTEND:20160310T233000Z
+SUMMARY:[AEA] First AEA German Theater festival - two day event
+RRULE:FREQ=WEEKLY;UNTIL=20160311T213000Z;BYDAY=TH,FR
+LOCATION:MPR 3035 Ash Street
+DESCRIPTION:Come join us for our first AEA German Theater Festival and enjo
+ y German plays\, music videos and Kinderchor performance. \nBaked goods an
+ d refreshments will for sale by German Cultural Committee
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:fqadvdu491m258ijcs447osj80@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20160314
+DTEND;VALUE=DATE:20160315
+SUMMARY:[AEA] ES ONLY- Parent Teacher Conferences - Minimum Days
+RRULE:FREQ=WEEKLY;UNTIL=20160318;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:h9b607s0939l4v1a8q7h945fc0@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20160314T150000Z
+DTEND:20160314T220000Z
+SUMMARY:[AEA] AEA Bookfair ES library
+RRULE:FREQ=WEEKLY;UNTIL=20160318T150000Z;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:vcd10mnar8mcb6ilepj59uf1i4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20160321
+DTEND;VALUE=DATE:20160322
+SUMMARY:[AEA] Spring Break — PBMS not marked off
+RRULE:FREQ=WEEKLY;UNTIL=20160401;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6atqca1da2he82puenbjfrakt4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20160421
+DTEND;VALUE=DATE:20160422
+SUMMARY:[AEA] AATG level 1 test - 4th period
+RRULE:FREQ=WEEKLY;UNTIL=20160422;BYDAY=TH,FR
+DESCRIPTION:8th grade students in Frau Bohl's classes will take test on one
+  of these days
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e8jr1235mlu9l6i0akei24jil4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20160428T150000Z
+DTEND:20160428T220000Z
+SUMMARY:[AEA] 5D German Language Diploma A1 Exam - Oral section
+RRULE:FREQ=WEEKLY;UNTIL=20160429T150000Z;BYDAY=TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:sbl50c0jo34tu0bofngp2504qk@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20161024T153000Z
+DTEND:20161024T163000Z
+SUMMARY:[AEA] Kiepenkasper - German Puppet Show
+RRULE:FREQ=WEEKLY;UNTIL=20161025T153000Z;BYDAY=MO,TU
+LOCATION:MPR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:cvf7cdqcrkvj5hgitll0qgguc0@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20161103T163000Z
+DTEND:20161103T173000Z
+SUMMARY:[AEA] Elementary School Tour for prospective Kindergarten Parents
+RRULE:FREQ=WEEKLY;UNTIL=20161110T173000Z;BYDAY=TH
+LOCATION:3035 Ash St\, San Diego\, CA 92102\, USA
+DESCRIPTION:Since our school tours are filling up fast and we would like to
+  keep the tour groups small\nplease RSVP at (619) 795 1190 #2101 or e-mail
+  Mrs McCreary at jmccreary@aeacs.org.\nAdults only please.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:mmsg21v4e3o5lfk714d9c57v4k@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20161114
+DTEND;VALUE=DATE:20161116
+SUMMARY:[AEA] ES Book Fair
+RRULE:FREQ=WEEKLY;UNTIL=20161117;BYDAY=MO,TU,WE,TH
+LOCATION:Library 3035 Ash Street
+DESCRIPTION:Ends Friday at 12 pm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:56tmdoue7lj5hc69ngmhtevg8o@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20161114
+DTEND;VALUE=DATE:20161115
+SUMMARY:[AEA] Minimum Days
+RRULE:FREQ=WEEKLY;UNTIL=20161118;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:moa0v5p0go4p8bb7fietbl0iu0@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20161114
+DTEND;VALUE=DATE:20161115
+SUMMARY:[AEA] Parent Teacher Conferences
+RRULE:FREQ=WEEKLY;UNTIL=20161118;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:uptid963oluohrgec0lgloklhc_R20161121@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20161121
+DTEND;VALUE=DATE:20161122
+SUMMARY:[AEA] No School - Fall Break — PBMS not marked off
+RRULE:FREQ=WEEKLY;UNTIL=20161125;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ap60gunld7hknt3rkuc18qsdn8@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20161219
+DTEND;VALUE=DATE:20161220
+SUMMARY:[AEA] No School - Winter Break — PBMS not marked off
+RRULE:FREQ=WEEKLY;UNTIL=20170106;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:s6hj4el7gukve3e5slfrobamhc@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20170112T173000Z
+DTEND:20170112T183000Z
+SUMMARY:[AEA] Elementary School Tour for prospective Kindergarten Parents
+RRULE:FREQ=WEEKLY;UNTIL=20170223T173000Z;BYDAY=TH
+LOCATION:3035 Ash St\, San Diego\, CA 92102\, USA
+DESCRIPTION:Since our school tours are filling up fast and we would like to
+  keep the tour groups small\nplease RSVP at (619) 795 1190 #2101 or e-mail
+  Mrs McCreary at jmccreary@aeacs.org.\nAdults only please.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:u04jvc48ctu9o36866ptaks97g@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20170217
+DTEND;VALUE=DATE:20170218
+SUMMARY:[AEA] No School — PBMS not marked off
+RRULE:FREQ=WEEKLY;UNTIL=20170220;BYDAY=MO,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0h4ue6aejd7qsl5372rvjg844c@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20170314T201500Z
+DTEND:20170314T213000Z
+SUMMARY:[AEA] German Theaterfest
+RRULE:FREQ=WEEKLY;UNTIL=20170314T065959Z;BYDAY=TU,TH,FR
+LOCATION:Elementary School MPR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0h4ue6aejd7qsl5372rvjg844c_R20170314T201500@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20170314T201500Z
+DTEND:20170314T213000Z
+SUMMARY:[AEA] German Theaterfest
+RRULE:FREQ=WEEKLY;UNTIL=20170316T201459Z;BYDAY=TU,TH,FR
+LOCATION:Elementary School MPR
+DESCRIPTION:Come join us for our second annual AEA German Theater Festival 
+ and enjoy German plays\, videos and music performance. 
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0h4ue6aejd7qsl5372rvjg844c_R20170316T201500@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20170316T201500Z
+DTEND:20170316T213000Z
+SUMMARY:[AEA] German Theaterfest
+RRULE:FREQ=WEEKLY;UNTIL=20170317T201500Z;BYDAY=TU,TH,FR
+LOCATION:Elementary School MPR
+DESCRIPTION:Come join us for our second annual AEA German Theater Festival 
+ and enjoy German plays\, videos and music performance by our AEA students. 
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4l3g1irs9sdmd0j9ghadu4vrc8@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20170320
+DTEND;VALUE=DATE:20170321
+SUMMARY:[AEA] ES Book Fair
+RRULE:FREQ=WEEKLY;UNTIL=20170324;BYDAY=MO,TU,WE,TH,FR
+LOCATION:ES library
+DESCRIPTION:ends Friday 3/20 at 12pm
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e5ovvif1iurho4u0ecbqebo6u0@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20170320
+DTEND;VALUE=DATE:20170321
+SUMMARY:[AEA] Minimum Days - Elementary school only
+RRULE:FREQ=WEEKLY;UNTIL=20170324;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pe9s41ra2l2v1cbgajmu20ett4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20170320
+DTEND;VALUE=DATE:20170321
+SUMMARY:[AEA] Parent Teacher Conferences ES only
+RRULE:FREQ=WEEKLY;UNTIL=20170324;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9aocn2qgvt0h4t5vk2pq4tph44@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20170327
+DTEND;VALUE=DATE:20170328
+SUMMARY:[AEA] No School - Spring Break — PBMS not marked off
+RRULE:FREQ=WEEKLY;UNTIL=20170407;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:koahngjnukiufckom87520442c_R20170417T153000@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20170417T153000Z
+DTEND:20170417T180000Z
+SUMMARY:[AEA] German language diploma A2 written exam 5a and 5c
+RRULE:FREQ=WEEKLY;UNTIL=20170419T153000Z;BYDAY=MO,TU,WE,TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:koahngjnukiufckom87520442c@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20170417T153000Z
+DTEND:20170417T180000Z
+SUMMARY:[AEA] German language diploma A2 written exam 5b and 5c
+RRULE:FREQ=WEEKLY;UNTIL=20170417T065959Z;BYDAY=MO,TU,WE,TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9rjr8cch15t2fnglnq0urvgpoc_R20170420T150000@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20170420T150000Z
+DTEND:20170420T220000Z
+SUMMARY:[AEA] German Language Diploma A2 Oral exams 5th grade
+RRULE:FREQ=WEEKLY;UNTIL=20170427T150000Z;BYDAY=TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9rjr8cch15t2fnglnq0urvgpoc@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20170420T150000Z
+DTEND:20170420T220000Z
+SUMMARY:[AEA] German Language Diploma Oral exams
+RRULE:FREQ=WEEKLY;UNTIL=20170420T065959Z;BYDAY=TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pljsk0eod1dm954jhmktaqs9gc@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20170424T153000Z
+DTEND:20170424T180000Z
+SUMMARY:[AEA] German language diploma A2  written exam 5 a
+RRULE:FREQ=WEEKLY;UNTIL=20170424T065959Z;BYDAY=MO,TU,WE,TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pljsk0eod1dm954jhmktaqs9gc_R20170424T153000@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20170424T153000Z
+DTEND:20170424T180000Z
+SUMMARY:[AEA] German language diploma A2  written exam 5 b
+RRULE:FREQ=WEEKLY;UNTIL=20170427T065959Z;BYDAY=MO,TU,WE,TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:750hka8c56mufjtnqocdpnshdh@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20180201
+DTEND;VALUE=DATE:20180202
+SUMMARY:[AEA] Live Music Month Assemblies Elementary School - Lunchtime Per
+ formances
+RRULE:FREQ=WEEKLY;UNTIL=20180215;BYDAY=TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5lvqfmceh1t2rfqjr2rca5g4ph@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20180306T211000Z
+DTEND:20180306T224000Z
+SUMMARY:[AEA] German Theaterfest 2018
+RRULE:FREQ=WEEKLY;UNTIL=20180309T211000Z;BYDAY=TU,TH,FR
+LOCATION:MPR 3035 Ash Street
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:50n5seh765u09prnccet8meo94@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20180312
+DTEND;VALUE=DATE:20180324
+SUMMARY:[AEA] 2nd Grade Canned Food Drive
+RRULE:FREQ=WEEKLY;UNTIL=20180312;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7no9f3e7vhnnh9vubcfjg0hd6c@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20180416T150000Z
+DTEND:20180416T170000Z
+SUMMARY:[AEA] 5th grade German Language Exam A2 - Listening Comprehension
+RRULE:FREQ=WEEKLY;UNTIL=20180424T065959Z;BYDAY=MO
+LOCATION:classroom
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1jtg2f4ifbg8c2bpgavu8bcin3@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20180417T150000Z
+DTEND:20180417T170000Z
+SUMMARY:[AEA] 5th grade German Language Exam A2 - Writing part
+RRULE:FREQ=WEEKLY;UNTIL=20180425T065959Z;BYDAY=TU
+LOCATION:Classroom
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:77oc0ltvsfpvh5etggcsutmhb5@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20180418T150000Z
+DTEND:20180418T170000Z
+SUMMARY:[AEA] 5th grade German Language Exam A2 - Reading Comprehension
+RRULE:FREQ=WEEKLY;UNTIL=20180426T065959Z;BYDAY=WE
+LOCATION:classroom
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7k58tbrioo0cshao6u1q8icv9k_R20180419T150000@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20180419T150000Z
+DTEND:20180419T220000Z
+SUMMARY:[AEA] 5th grade German Language Exam A2 - Oral Presentation
+RRULE:FREQ=WEEKLY;UNTIL=20180427T065959Z;BYDAY=TH
+LOCATION:Conference Room
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7k58tbrioo0cshao6u1q8icv9k@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20180419T150000Z
+DTEND:20180419T220000Z
+SUMMARY:[AEA] 5th grade German Language Exam A2 - Oral Presentation
+RRULE:FREQ=WEEKLY;UNTIL=20180419T065959Z;BYDAY=TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4gpr3m604a5pg4i5njs2fg6kek@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20180503T162500Z
+DTEND:20180503T171500Z
+SUMMARY:[AEA] 5 D and E:  A1- German Language Diploma Test
+RRULE:FREQ=WEEKLY;UNTIL=20180505T065959Z;BYDAY=TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:36cj9lvtb7t5e0bbe0citqtn59@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20180625T150000Z
+DTEND:20180625T183000Z
+SUMMARY:[AEA] Extended School Year (ESY) program (SpEd)
+RRULE:FREQ=WEEKLY;COUNT=2;BYDAY=MO,TU
+DESCRIPTION:Contact: Shawn Powell
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2jo5mq13475cqer04h4c9cj9vd@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20180627T150000Z
+DTEND:20180627T183000Z
+SUMMARY:[AEA] Extended School Year (ESY) program (SpEd)
+RRULE:FREQ=WEEKLY;COUNT=18;BYDAY=MO,TU,WE,TH,FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6g0p5tq3l0q156obofqfli8m55@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20181016
+DTEND;VALUE=DATE:20181017
+SUMMARY:[AEA] ​FOAEA Fall Fundraiser
+RRULE:FREQ=WEEKLY;UNTIL=20181030;BYDAY=MO,TU,WE,TH,FR
+DESCRIPTION:Contact: Jennifer Carter <secretary@foaea.org>
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2cojt74ukcp2f4ub1sk9ep05i9@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20181101T163000Z
+DTEND:20181101T173000Z
+SUMMARY:[AEA] Elementary School Tours for new parents
+RRULE:FREQ=WEEKLY;UNTIL=20190301T075959Z;BYDAY=TH
+DESCRIPTION:https://www.signupgenius.com/go/30e0a4dada72baa8-aeakindergarte
+ n
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:60p2go8d0ta2912as74t0aiqg4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20190320
+DTEND;VALUE=DATE:20190321
+SUMMARY:[AEA] Elementary School Walk for Water T-shirt Sales
+RRULE:FREQ=DAILY;WKST=SU;COUNT=2
+LOCATION:3035 Ash St\, San Diego\, CA 92102\, USA
+DESCRIPTION:7:45-8:10\, 12:30-1:00 pm\, Inside front gate.  $10 each. Cash 
+ only.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:01vhm60inp9dvseioqq41mblok@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20191205T173000Z
+DTEND:20191205T183000Z
+SUMMARY:[AEA] Kindergarten School Tour for Prospective Parents
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20191220T075959Z;BYDAY=TH
+DESCRIPTION:Please sign up at Description: https://www.signupgenius.com/go/
+ 30E0A4DADA72BAA8-kindergarten\nFor more information about our enrollment p
+ rocess please visit: https://aeaces.org/enrollment/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:19fn4e9nl5u33iicaltnu29cr8@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20200116T173000Z
+DTEND:20200116T183000Z
+SUMMARY:[AEA] Kindergarten School Tour for Prospective Parents
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20200228T075959Z;BYDAY=TH
+DESCRIPTION:Please sign up at Description: https://www.signupgenius.com/go/
+ 30E0A4DADA72BAA8-kindergarten\nFor more information about our enrollment p
+ rocess please visit: https://aeaces.org/enrollment/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7i8h3le7qvv9f9jlbmh0l3h8de@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20210915T200000Z
+DTEND:20210915T220000Z
+SUMMARY:[AEA] OPTIONAL Covid testing on each campus (Students and Staff onl
+ y)
+RRULE:FREQ=WEEKLY;UNTIL=20220112T075959Z;BYDAY=WE
+LOCATION:Elementary - 3035 Ash Street (in front of school) and Middle - 458
+  26th Street (athletic courts back of school)
+DESCRIPTION:<h2><strong>OPTIONAL COVID Testing for AEA Students and Staff</
+ strong><br><strong>Wednesdays on campus (1:00pm – 3:00pm)</strong></h2><
+ hr><br>We have recently received a shipment of COVID antigen tests from th
+ e State which allows us to open up our optional weekly COVID surveillance 
+ testing for students and staff.&nbsp\; We will continue optional weekly te
+ sting on Wednesday afternoons (while testing supplies last).&nbsp\;<br><br
+ ><b>This testing is OPTIONAL and is only open to AEA students and staff me
+ mbers.</b>&nbsp\;<ul><li>OPTIONAL Covid testing day will be every Wednesda
+ y between 1:00pm – 3:00pm.</li><li>Available only to AEA students and st
+ aff members.</li><li>Parent consent is required prior to testing.</li><li>
+ Masks are mandatory.</li><li>Testing is performed via a rapid antigen test
+  (nasal swab) and is self-administered (student will swab themselves with 
+ guidance from an AEA staff member).</li><li>Tests will be administered and
+  then you will be asked to leave. You will receive electronic notification
+  of results. There will be absolutely NO congregate waiting at the testing
+  site.</li></ul>&nbsp\;<br><b>LOCATIONS:&nbsp\;&nbsp\;</b><ul><li>Elementa
+ ry – 3035 Ash Street (front of school)</li><li>Middle – 458 26th Stree
+ t (athletic courts – back of school)</li></ul>&nbsp\;<br><b><u>IMPORTANT
+ :&nbsp\;</u></b><br><a href="https://my.primary.health/l/einstein">Parent 
+ consent is required prior to testing. Please register your student HERE</a
+ >.&nbsp\; All information is confidential.&nbsp\;&nbsp\;<b>All students an
+ d staff&nbsp\;<u>must</u>&nbsp\;have an electronic consent form filed prio
+ r in order to receive a test.</b><br><br><h2><strong><br></strong></h2><h2
+ ><strong>Pruebas OPCIONALES de COVID para estudiantes y empleados de AEA</
+ strong><br><strong>Los miércoles en las dos escuelas (1:00pm – 3:00pm)<
+ /strong></h2><hr><br>Recientemente hemos recibido un envío de pruebas de 
+ antígeno COVID del gobierno estatal que nos permite administrar la prueba
+  semanal opcional de monitoreo a COVID para los estudiantes y el personal.
+ &nbsp\; Continuaremos con las pruebas semanales opcionales los miércoles 
+ por la tarde (hasta agotar existencias).&nbsp\;<br><br><b>Esta prueba es O
+ PCIONAL y sólo está abierta a los estudiantes y empleados de AEA.</b>&nb
+ sp\;<ul><li>El día que se administrarán las pruebas OPCIONALES de Covid 
+ será los miércoles entre la 1:00pm y las 3:00pm.</li><li>Disponible sól
+ o para los estudiantes y empleados de AEA.</li><li>Se requiere el consenti
+ miento de los padres antes de la prueba.</li><li>Las mascarillas son oblig
+ atorias.</li><li>La prueba se realiza a través de una prueba rápida de a
+ ntígeno (hisopo nasal) y es auto-administrada (el estudiante se limpiará
+  a sí mismo con la guía del personal de AEA).</li><li>Se administrarán 
+ las pruebas y luego se le pedirá que se retire. Recibirá una notificaci
+ ón electrónica de los resultados. No habrá absolutamente NINGUNA espera
+  congregada en el lugar de la prueba.</li></ul>&nbsp\;<br><b>UBICACIONES:&
+ nbsp\;&nbsp\;</b><ul><li>Primaria – 3035 Ash Street (frente a la escuela
+ )</li><li>Secundaria – 458 26th Street (canchas deportivas – parte tra
+ sera de la escuela)</li></ul>&nbsp\;<br><b><u>IMPORTANTE:</u></b><br><a hr
+ ef="https://my.primary.health/l/einstein">Se requiere el consentimiento de
+  los padres antes de hacerse las pruebas. Por favor registre a su hijo AQU
+ I</a>.&nbsp\;Toda la información es confidencial.&nbsp\;<b>Todos los estu
+ diantes y el personal deben tener un formulario de consentimiento electró
+ nico presentado antes para recibir una prueba.&nbsp\;</b>
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7i8h3le7qvv9f9jlbmh0l3h8de_R20220112T210000@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20220112T210000Z
+DTEND:20220112T220000Z
+SUMMARY:[AEA] OPTIONAL Covid testing on each campus (Students and Staff onl
+ y)
+RRULE:FREQ=WEEKLY;UNTIL=20220706T065959Z;BYDAY=WE
+LOCATION:Elementary - 3035 Ash Street (in front of school) and Middle - 458
+  26th Street (athletic courts back of school)
+DESCRIPTION:<h2><strong>OPTIONAL COVID Testing for AEA Students and Staff</
+ strong><br><strong>Wednesdays on campus (1:00pm – 2:00pm)</strong></h2><
+ hr><br>We have recently received a shipment of COVID antigen tests from th
+ e State which allows us to open up our optional weekly COVID surveillance 
+ testing for students and staff.&nbsp\; We will continue optional weekly te
+ sting on Wednesday afternoons (while testing supplies last).&nbsp\;<br><br
+ ><b>This testing is OPTIONAL and is only open to AEA students and staff me
+ mbers.</b>&nbsp\;<ul><li>OPTIONAL Covid testing day will be every Wednesda
+ y between 1:00pm – 2:00pm.</li><li>Available only to AEA students and st
+ aff members.</li><li>Parent consent is required prior to testing.</li><li>
+ Masks are mandatory.</li><li>Testing is performed via a rapid antigen test
+  (nasal swab) and is self-administered (student will swab themselves with 
+ guidance from an AEA staff member).</li><li>Tests will be administered and
+  then you will be asked to leave. You will receive electronic notification
+  of results. There will be absolutely NO congregate waiting at the testing
+  site.</li></ul>&nbsp\;<br><b>LOCATIONS:&nbsp\;&nbsp\;</b><ul><li>Elementa
+ ry – 3035 Ash Street (front of school)</li><li>Middle – 458 26th Stree
+ t (athletic courts – back of school)</li></ul>&nbsp\;<br><b><u>IMPORTANT
+ :&nbsp\;</u></b><br><a href="https://my.primary.health/l/einstein">Parent 
+ consent is required prior to testing. Please register your student HERE</a
+ >.&nbsp\; All information is confidential.&nbsp\;&nbsp\;<b>All students an
+ d staff&nbsp\;<u>must</u>&nbsp\;have an electronic consent form filed prio
+ r in order to receive a test.</b><br><br><h2><strong><br></strong></h2><h2
+ ><strong>Pruebas OPCIONALES de COVID para estudiantes y empleados de AEA</
+ strong><br><strong>Los miércoles en las dos escuelas (1:00pm – 2:00pm)<
+ /strong></h2><hr><br>Recientemente hemos recibido un envío de pruebas de 
+ antígeno COVID del gobierno estatal que nos permite administrar la prueba
+  semanal opcional de monitoreo a COVID para los estudiantes y el personal.
+ &nbsp\; Continuaremos con las pruebas semanales opcionales los miércoles 
+ por la tarde (hasta agotar existencias).&nbsp\;<br><br><b>Esta prueba es O
+ PCIONAL y sólo está abierta a los estudiantes y empleados de AEA.</b>&nb
+ sp\;<ul><li>El día que se administrarán las pruebas OPCIONALES de Covid 
+ será los miércoles entre la 1:00pm y las 2:00pm.</li><li>Disponible sól
+ o para los estudiantes y empleados de AEA.</li><li>Se requiere el consenti
+ miento de los padres antes de la prueba.</li><li>Las mascarillas son oblig
+ atorias.</li><li>La prueba se realiza a través de una prueba rápida de a
+ ntígeno (hisopo nasal) y es auto-administrada (el estudiante se limpiará
+  a sí mismo con la guía del personal de AEA).</li><li>Se administrarán 
+ las pruebas y luego se le pedirá que se retire. Recibirá una notificaci
+ ón electrónica de los resultados. No habrá absolutamente NINGUNA espera
+  congregada en el lugar de la prueba.</li></ul>&nbsp\;<br><b>UBICACIONES:&
+ nbsp\;&nbsp\;</b><ul><li>Primaria – 3035 Ash Street (frente a la escuela
+ )</li><li>Secundaria – 458 26th Street (canchas deportivas – parte tra
+ sera de la escuela)</li></ul>&nbsp\;<br><b><u>IMPORTANTE:</u></b><br><a hr
+ ef="https://my.primary.health/l/einstein">Se requiere el consentimiento de
+  los padres antes de hacerse las pruebas. Por favor registre a su hijo AQU
+ I</a>.&nbsp\;Toda la información es confidencial.&nbsp\;<b>Todos los estu
+ diantes y el personal deben tener un formulario de consentimiento electró
+ nico presentado antes para recibir una prueba.&nbsp\;</b>
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:16pk57mhfa0bqimf71qs0vq0sa@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20220414T144500Z
+DTEND:20220414T220500Z
+SUMMARY:[AEA] Safe School Ambassador Training - Elementary
+RRULE:FREQ=WEEKLY;WKST=SU;COUNT=2;BYDAY=FR,TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7af17h3vme7h6m3t6kh54j97tt@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20230501
+DTEND;VALUE=DATE:20230502
+SUMMARY:[AEA] Principals' Day (Annually on May 1)
+RRULE:FREQ=YEARLY
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1h6f7qt9ajf5r2pvigc6nfc8hr@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20231002
+DTEND;VALUE=DATE:20231003
+SUMMARY:[AEA] Custodian's Day
+RRULE:FREQ=YEARLY
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:41o6cq8vi9rslhbfhpghl3jor9@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20231016
+DTEND;VALUE=DATE:20231017
+SUMMARY:[AEA] Boss's Day (Annually)
+RRULE:FREQ=YEARLY;UNTIL=20261015
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6smg14t574p29cv6allruoumvi@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20240227T173000Z
+DTEND:20240227T180000Z
+SUMMARY:[AEA] AEACES Kindergarten School Tour in English
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20240320T065959Z;BYDAY=TU
+DESCRIPTION:<p dir="ltr">Albert Einstein Academies is excited to begin offe
+ ring in-person tours of our school campuses for prospective families. Each
+  tour will run for approximately 30-60 minutes and will take you through o
+ ur entire school campus. Unfortunately\, we will not be able to bring atte
+ ndees directly into active classrooms during the school day. To attend\, y
+ ou must RSVP for a specific tour date and time. </p><br><p dir="ltr">Thes
+ e tours are intended for adults only\, please do not bring children. We as
+ k that only one member of your family attend the tour due to limited avail
+ ability.</p><br><p dir="ltr">Health and Safety</p><ul><li dir="ltr"><p dir
+ ="ltr">All visitors must be free from <a href="https://www.google.com/url?
+ q=https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html
+ &amp\;sa=D&amp\;source=calendar&amp\;ust=1705942372343344&amp\;usg=AOvVaw3
+ pi3oy38biG2u_T6EoFpeK" target="_blank"><u>COVID-19 symptoms.</u></a></p></
+ li><li dir="ltr"><p dir="ltr">All visitors are highly recommended to wear 
+ a mask while on campus.</p></li><li dir="ltr"><p dir="ltr">Each attendee w
+ ill be asked to check in via our front desk system which performs a routin
+ e background check and issues an identification badge. </p></li><li dir="
+ ltr"><p dir="ltr">At all times display your visitor identification badge d
+ uring your visit. </p></li></ul><br>All tour options and RSVP links are a
+ vailable on the <a href="https://www.google.com/url?q=https://www.aeacs.or
+ g/school-tours&amp\;sa=D&amp\;source=calendar&amp\;ust=1705942372343344&am
+ p\;usg=AOvVaw3aPUx9H8n5KmC0vLco8e2Z" target="_blank"><u>AEA website under 
+ the Enrollment menu</u></a>.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2f7kohb49n9j3lhal01v4vlmj1@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20240624
+DTEND;VALUE=DATE:20240629
+SUMMARY:[AEA] SummerStein
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20240723;BYDAY=MO
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3dsgp2hli61on46c4iehmeh0ll@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20241021T193000Z
+DTEND:20241021T230000Z
+SUMMARY:[AEA] Scholastic Book Fair in the library (elementary)
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20241025T065959Z;BYDAY=MO,TU,WE,TH
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:113bu57j15as0uhsmhi8vapcak@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20250114T173000Z
+DTEND:20250114T183000Z
+SUMMARY:[AEA] AEACES Kindergarten School Tour in English
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250313T065959Z;INTERVAL=2;BYDAY=TU
+LOCATION:30th St & A St\, San Diego\, CA 92102\, USA
+DESCRIPTION:Each tour begins at 9:30 am and will run for approximately 30-6
+ 0 minutes. Unfortunately\, we will not be able to bring attendees directly
+  into active classrooms during the school day. To attend\, you must RSVP f
+ or a specific tour date and time. <br><br>These tours are intended for ad
+ ults only\, please do not bring children. We ask that only one member of y
+ our family attend the tour due to limited availability.<br><br>Health and 
+ Safety<ul><li>All visitors must be free from <a href="https://www.google.
+ com/url?q=https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/sympt
+ oms.html&amp\;sa=D&amp\;source=calendar&amp\;ust=1732405472270603&amp\;usg
+ =AOvVaw2GErGOK2UFMbAOKM8S6tLP" target="_blank">COVID-19 symptoms.</a></li>
+ </ul><ul><li>Each attendee will be asked to check in. We will have a routi
+ ne background check and issue an identification badge.</li><li>At all time
+ s display your visitor identification badge during your visit. </li></ul>
+ <br>Tour information can also be found on the <a href="https://www.google
+ .com/url?q=https://www.aeacs.org/school-tours&amp\;sa=D&amp\;source=calend
+ ar&amp\;ust=1732405472270603&amp\;usg=AOvVaw0hni1IyYgaGMForB546bpz" target
+ ="_blank">AEA website under the Enrollment menu.</a><br><h4>Location Detai
+ ls:</h4>Tour starts at 30th St and A St: <a href="https://www.google.com/
+ url?q=https://maps.app.goo.gl/hYZjWZNJ2N9q6Gnz6&amp\;sa=D&amp\;source=cale
+ ndar&amp\;ust=1732405472270603&amp\;usg=AOvVaw3x54yrrdcZM9NSvaP2cLim" targ
+ et="_blank">https://maps.app.goo.gl/hYZjWZNJ2N9q6Gnz6</a>
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:45ssdji37evnn5149e6b7uhbk0@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20250317T221500Z
+DTEND:20250317T230000Z
+SUMMARY:[AEA] Book Fair in the library (elementary)
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250318T065959Z;BYDAY=MO,TU,WE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ou1smocaufi3v4lft92qkup2es@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20250318T221500Z
+DTEND:20250318T230000Z
+SUMMARY:[AEA] Book Fair in the library (elementary)
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20250319T065959Z;BYDAY=MO,TU,WE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4l180687iqubrvpjbnj0ahb712@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20250502
+DTEND;VALUE=DATE:20250503
+SUMMARY:[AEA] Annual School Lunch Hero Day
+RRULE:FREQ=YEARLY
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2stnecrvmndsae2bcburm253uf@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20250815T210500Z
+DTEND:20250815T210500Z
+SUMMARY:[PBMS] Early Dismissal
+RRULE:FREQ=WEEKLY;UNTIL=20260529T065959Z;BYDAY=FR
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7kccc2unibb9194jkb2d1s71l0@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20251020T193000Z
+DTEND:20251020T230000Z
+SUMMARY:[AEA] Scholastic Book Fair - Elementary School
+RRULE:FREQ=DAILY;UNTIL=20251022T065959Z
+LOCATION:Albert Einstein Charter Academy Elementary School\, 3035 Ash St\, 
+ San Diego\, CA 92102\, USA
+DESCRIPTION:<ul dir="auto"><li>Scholastic Book Fair</li><li>Located on the 
+ elementary campus<br></li><li>October 20-24</li><li>Family shopping: Oct 2
+ 0-23\, from 12:30-4:00\, Friday Oct. 24 from 12:30-1:00</li></ul>
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9e2e21re7driinhasgs1kdet0g@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20251022T193000Z
+DTEND:20251022T230000Z
+SUMMARY:[AEA] Scholastic Book Fair - Elementary School
+RRULE:FREQ=DAILY;UNTIL=20251023T065959Z
+LOCATION:Albert Einstein Charter Academy Elementary School\, 3035 Ash St\, 
+ San Diego\, CA 92102\, USA
+DESCRIPTION:<ul dir="auto"><li>Scholastic Book Fair</li><li>Located on the 
+ elementary campus<br></li><li>October 20-24</li><li>Family shopping: Oct 2
+ 0-23\, from 12:30-4:00\, Friday Oct. 24 from 12:30-1:00</li></ul>
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:hqrpnpad6g8gulb9gd1oln07sv@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20251023T193000Z
+DTEND:20251023T230000Z
+SUMMARY:[AEA] Scholastic Book Fair - Elementary School
+RRULE:FREQ=DAILY;COUNT=3
+LOCATION:Albert Einstein Charter Academy Elementary School\, 3035 Ash St\, 
+ San Diego\, CA 92102\, USA
+DESCRIPTION:<ul dir="auto"><li>Scholastic Book Fair</li><li>Located on the 
+ elementary campus<br></li><li>October 20-24</li><li>Family shopping: Oct 2
+ 0-23\, from 12:30-4:00\, Friday Oct. 24 from 12:30-1:00</li></ul>
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1nbvniob80b8g86dkv88ck6o81@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20260918T010000Z
+DTEND:20260918T020000Z
+SUMMARY:[AEA] Parent/Admin - Greet and Eat
+LOCATION:Albert Einstein Academy Charter Middle School\, 458 26th St\, San 
+ Diego\, CA 92102\, USA
+DESCRIPTION:Join with Google Meet: https://meet.google.com/pmx-xzpd-yrr\nOr
+  dial: (US) +1 484-420-7691 PIN: 785002092#\n\nLearn more about Meet at: h
+ ttps://support.google.com/a/users/answer/9282720
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7i00m2q1b4adhvd7mo7rnbqans@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:[AEA] German Spirit Day Elementary
+DESCRIPTION:Students may wear the colors of the German flag: black\, red\, 
+ and/or yellow (gold) to school\, or wear traditional German dress\, instea
+ d of their school uniforms.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:18torrs1420ks39elb11ekr4r5@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20261009T150000Z
+DTEND:20261009T220000Z
+SUMMARY:[AEA] ES Picture day
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4o5im7iesb6o6d21963jsesvbm@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:[AEA] Indigenous People's Day - NO SCHOOL — PBMS not marked off
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6se6esu2i3ihc3c966h416ukh4@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20261016T153000Z
+DTEND:20261016T173000Z
+SUMMARY:[AEA] ES Picture make-up day
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:55f2m8hhf84uhh2gr5a6fdvhm7@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261024
+SUMMARY:[AEA] Elementary Scholastic Book Fair October 19-23
+DESCRIPTION:<ul><li>Elementary Scholastic Book Fair October 19-23</li><li>F
+ amily Shopping: Monday-Thursday October 19-22 from dismissal to 4:00 and O
+ ctober 23 Friday from dismissal to 1:00</li></ul>
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3ak7mq7bv5k7anm7vq1bgqeaff@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261024
+SUMMARY:[AEA] Minimum days - Parent/Teacher Conferences
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:0q3nuqi5qd5j5qup0ugb7sbm4d@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20261030T230000Z
+DTEND:20261031T010000Z
+SUMMARY:[AEA] Trunk or Treat Party!!!!!!
+LOCATION:Presidents Way Lawn\, Park Blvd\, San Diego\, CA 92101\, USA
+DESCRIPTION:Join FOAEA for a Trunk or Treat Party!!!!!!
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:both-4ub19jvs1jq28rcc8viu3mriu5@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[BOTH OFF] Veterans' Day - NO SCHOOL (PBMS: confirm)
+DESCRIPTION:AEA: Veterans' Day - NO SCHOOL\nPBMS: Veterans Day
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:13ecjalbn1gi7dgnpbl9dne0ls@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20261113T020000Z
+DTEND:20261113T040000Z
+SUMMARY:[AEA] AEA Lantern Fest TK-8th @ Organ Pavilion
+DESCRIPTION:Meet at Balboa Park - Organ Pavilion
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:both-4iij6n92eqk5a9siv20i4bbk1k@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261128
+SUMMARY:[BOTH OFF] Fall vacation - NO SCHOOL
+DESCRIPTION:AEA: Fall vacation - NO SCHOOL\nPBMS: Fall Break
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6qvdhsabarcb5apg471gg2ai1s@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20261207T000000Z
+DTEND:20261207T020000Z
+SUMMARY:[AEA] Winter Market!!!!!
+LOCATION:458 26th St\, San Diego\, CA 92102\, USA- at the Middle School Ath
+ letic Courts. 
+DESCRIPTION:It's a fun family event: food\, drinks\, holiday shopping & ent
+ ertainment. Sign up to be a vendor by November 20th.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1bgi2mcoj260gavsre5s78rtnb@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:[AEA] Fall semester ends
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5igm5ihtc278h78sj5287btrkb@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20270109
+SUMMARY:[AEA] Winter vacation - NO SCHOOL
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:28gob5etufqj9pont8j2grbcuq@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20270105
+SUMMARY:[BOTH OFF] [PBMS] Winter Break (NO SCHOOL)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:only-AEA-2027-01-05@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270109
+SUMMARY:[AEA ONLY OFF] PBMS is in school Jan 5–Jan 8
+DESCRIPTION:From: Winter vacation - NO SCHOOL
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:54hvsbku1ctehe9040auie8iti@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:[PBMS] School Reopens from Winter Break
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4lgea1k431hsi4oiv8eh5m1sta@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:[AEA] Spring semester begins
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:both-74q3q0co23o49d6qlbkn3bp4ah@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+SUMMARY:[BOTH OFF] Martin Luther King Jr. Day - NO SCHOOL
+DESCRIPTION:AEA: Martin Luther King Jr. Day - NO SCHOOL\nPBMS: Martin Luthe
+ r King Jr. Day (Holiday\, No School)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:both-6e2hmbq5vddamrc87b7qubfksr@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:[BOTH OFF] Presidents' Day - NO SCHOOL
+DESCRIPTION:AEA: Presidents' Day - NO SCHOOL\nPBMS: Presidents' Day (Holida
+ y\, No School)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:both-485d54lqk0jpbk5a0dqtbob8ne@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+SUMMARY:[BOTH OFF] Presidents' Day - NO SCHOOL
+DESCRIPTION:AEA: Presidents' Day - NO SCHOOL\nPBMS: Presidents' Day (Holida
+ y\, No School)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2tme4v7645ecc4l8lldfauqeas@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:[PBMS] Non-instructional Day (NO SCHOOL) — AEA not marked off
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3g7ahivohkt5frc4o6jqrcr0hi@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270319
+SUMMARY:[AEA] Elementary Scholastic Book Fair from March 15-18
+DESCRIPTION:<ul><li>Elementary Scholastic Book Fair</li><li>Family Shopping
+ : Monday-Thursday March 15-18  from dismissal to 4:00\, and March 19 from
+  dismissal to 1:00</li></ul>
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4i859lakmvb359o2skarih5ou1@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270320
+SUMMARY:[AEA] Minimum days - Parent/Teacher Conferences
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:only-AEA-2027-03-22@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270327
+SUMMARY:[AEA ONLY OFF] PBMS is in school Mar 22–Mar 26
+DESCRIPTION:From: Spring vacation - NO SCHOOL
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7qvencaamb4latfn60f3umb4h3@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270322
+DTEND;VALUE=DATE:20270403
+SUMMARY:[AEA] Spring vacation - NO SCHOOL
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6b5t2hmjojslpg90kqhu7k4q9m@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270403
+SUMMARY:[BOTH OFF] [PBMS] Spring Break (NO SCHOOL)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:70ni59pvnqh8fit3uau5fn8nor@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[PBMS] First Day of School Library Month
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6mh0udhpiltnd0ojd7830hhecg@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART:20270423T153000Z
+DTEND:20270423T173000Z
+SUMMARY:[AEA] 5th grade graduation pictures
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5marjamp8omf3u0enud60nlj0l@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270527
+SUMMARY:[PBMS] Last Day of School
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:both-796e94ahjqgies19fj4pqakokk@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270531
+DTEND;VALUE=DATE:20270601
+SUMMARY:[BOTH OFF] Memorial Day - NO SCHOOL (PBMS: confirm)
+DESCRIPTION:AEA: Memorial Day - NO SCHOOL\nPBMS: Memorial Day
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1m67cej8a96p4ahv21jc3sb6f3@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270602
+DTEND;VALUE=DATE:20270603
+SUMMARY:[AEA] 5th grade promotion
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5g461cb7685sn2aeb1ut23ogvl@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:[AEA] Last day of school - Minimum day
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3mli28cuuek6fi9i2bntsdtlrh@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+SUMMARY:[AEA] Spring semester ends
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1iake56gg6mus5u7pdviaaa1cu@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270619
+DTEND;VALUE=DATE:20270620
+SUMMARY:[AEA] Juneteenth
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7bmhp9rggojl6na1u4eranc8ng@google.com@school-calendar
+DTSTAMP:20261011T185853Z
+DTSTART;VALUE=DATE:20270619
+DTEND;VALUE=DATE:20270620
+SUMMARY:[PBMS] Juneteenth (confirm)
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

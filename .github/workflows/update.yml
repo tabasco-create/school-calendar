@@ -22,9 +22,12 @@ jobs:
           python-version: "3.12"
 
       - name: Build curated feed
-        env:
-          FEED_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/school.ics
-        run: python build_calendar.py
+        run: |
+          owner="${GITHUB_REPOSITORY_OWNER,,}"   # Pages hostnames are lowercase
+          repo="${GITHUB_REPOSITORY#*/}"
+          export FEED_URL="https://${owner}.github.io/${repo}/school.ics"
+          export REPO_URL="https://github.com/${GITHUB_REPOSITORY}"
+          python build_calendar.py
 
       - name: Commit if changed
         run: |

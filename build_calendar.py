@@ -10,6 +10,7 @@ Outputs (in docs/, served by GitHub Pages):
 
 Standard library only, so the GitHub Actions run needs no installs.
 """
+import base64
 import datetime as dt
 import html
 import json
@@ -737,7 +738,9 @@ def write_page(events, changes, changed_at, path, feed_url, repo_url=None):
         ch = '<p class="muted">No changes yet. Edits the schools make will show up here.</p>'
 
     webcal = re.sub(r"^https?://", "webcal://", feed_url)
-    google = "https://calendar.google.com/calendar/render?cid=" + urllib.parse.quote(webcal, safe="")
+    # Google's mobile app expects cid base64-encoded; a plain URL shows up as garbled symbols
+    cid = base64.b64encode(feed_url.encode()).decode().rstrip("=")
+    google = "https://calendar.google.com/calendar/render?cid=" + urllib.parse.quote(cid, safe="")
     now = dt.datetime.now(TZ).strftime("%a %b %-d, %-I:%M %p")
     repo = f'<a href="{html.escape(repo_url)}">Source on GitHub</a>.' if repo_url else ""
     with open(path, "w", encoding="utf-8") as f:

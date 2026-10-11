@@ -15,7 +15,9 @@ import html
 import json
 import os
 import re
+import string
 import sys
+import urllib.parse
 import urllib.request
 from zoneinfo import ZoneInfo
 
@@ -405,66 +407,250 @@ def diff(old, new):
     return changes
 
 
-PAGE = """<!doctype html>
+PAGE = string.Template("""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>School Calendar</title>
+<meta name="description" content="Curated AEA + PBMS school calendar: days off, minimum days, conferences and family events.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>">
 <style>
-:root{{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#6b6a65;--line:#e4e2dc;--both:#2f6f4f;--aea:#2b5ea7;--pbms:#9a4d16;--alert:#b3261e}}
-@media (prefers-color-scheme:dark){{:root{{--bg:#161615;--fg:#ecebe6;--muted:#9c9b95;--line:#2c2b29;--both:#6fc49a;--aea:#86aef0;--pbms:#f0a46a;--alert:#ff8a80}}}}
-body{{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,system-ui,Segoe UI,sans-serif}}
-main{{max-width:760px;margin:0 auto;padding:24px 16px 64px}}
-h1{{font-size:1.6rem;margin:0 0 4px}} h2{{font-size:1.05rem;margin:32px 0 8px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}}
-.meta{{color:var(--muted);font-size:.9rem}}
-.sub{{margin:16px 0;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:.9rem;word-break:break-all}}
-table{{width:100%;border-collapse:collapse}} td{{padding:7px 8px 7px 0;border-bottom:1px solid var(--line);vertical-align:top}}
-td.w{{white-space:nowrap;color:var(--muted);width:1%;padding-right:16px;font-variant-numeric:tabular-nums}}
-.both{{color:var(--both);font-weight:600}} .aea{{color:var(--aea)}} .pbms{{color:var(--pbms)}} .alert{{color:var(--alert);font-weight:600}}
-.month td{{border:0;padding-top:20px;font-weight:600}}
+:root{--bg:#f7f4ee;--card:#fffdf9;--fg:#22211e;--muted:#6e6a61;--line:#e3ddd1;
+--both:#2e6b4c;--both-bg:#e3f0e8;--aea:#2a5aa0;--aea-bg:#e4ecf8;--pbms:#9b4a12;--pbms-bg:#f8e9dd;
+--alert:#b02a20;--alert-bg:#fbe5e2;--accent:#22211e;--accent-fg:#fffdf9}
+@media (prefers-color-scheme:dark){:root{--bg:#151513;--card:#1e1d1a;--fg:#ecebe6;--muted:#9d998f;--line:#302e2a;
+--both:#7fcfa2;--both-bg:#1d2e24;--aea:#8fb4f2;--aea-bg:#1c2536;--pbms:#f2a96f;--pbms-bg:#33241a;
+--alert:#ff8f84;--alert-bg:#3a1e1b;--accent:#ecebe6;--accent-fg:#151513}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+main{max-width:780px;margin:0 auto;padding:28px 16px 64px}
+header h1{font-size:1.9rem;line-height:1.15;margin:0;letter-spacing:-.01em}
+header p{margin:4px 0 0;color:var(--muted)}
+.status{display:flex;flex-wrap:wrap;gap:6px 18px;margin:14px 0 22px;font-size:.88rem;color:var(--muted)}
+.status b{color:var(--fg);font-weight:600}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--both);margin-right:6px;vertical-align:1px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:16px}
+h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:30px 0 10px}
+.card h2{margin-top:0}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 12px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border-radius:8px;border:1px solid var(--line);
+background:var(--card);color:var(--fg);font:inherit;font-size:.92rem;font-weight:600;text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.btn:hover{filter:brightness(.96)}
+.url{display:flex;gap:8px;align-items:stretch}
+.url code{flex:1;min-width:0;padding:8px 10px;border-radius:8px;background:var(--bg);border:1px solid var(--line);
+font-size:.82rem;overflow-x:auto;white-space:nowrap}
+.hint{font-size:.84rem;color:var(--muted);margin:10px 0 0}
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.tile{border-radius:12px;padding:12px 14px}
+.tile .lbl{font-size:.74rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700}
+.tile .d{font-size:1.15rem;font-weight:700;margin-top:2px}
+.tile .n{font-size:.84rem;margin-top:2px;opacity:.85}
+.t-both{background:var(--both-bg);color:var(--both)} .t-aea{background:var(--aea-bg);color:var(--aea)} .t-pbms{background:var(--pbms-bg);color:var(--pbms)}
+@media (max-width:560px){.next{grid-template-columns:1fr}}
+.legend{display:flex;flex-wrap:wrap;gap:8px;font-size:.84rem}
+.tag{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.76rem;font-weight:700;white-space:nowrap}
+.tag.both{background:var(--both-bg);color:var(--both)} .tag.aea{background:var(--aea-bg);color:var(--aea)}
+.tag.pbms{background:var(--pbms-bg);color:var(--pbms)} .tag.alert{background:var(--alert-bg);color:var(--alert)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.chip{padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);font:inherit;font-size:.85rem;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.month{font-weight:700;margin:18px 0 4px;font-size:1rem}
+.row{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
+.row .w{color:var(--muted);font-size:.9rem;font-variant-numeric:tabular-nums}
+.row .t{display:flex;flex-wrap:wrap;gap:6px;align-items:baseline}
+.row.off .t span.s{font-weight:600}
+@media (max-width:560px){.row{grid-template-columns:1fr;gap:2px}}
+.chg{display:grid;grid-template-columns:80px 1fr;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.chg .a{font-weight:700} .chg .a.Added{color:var(--both)} .chg .a.Removed{color:var(--alert)} .chg .a.Changed{color:var(--pbms)}
+.muted{color:var(--muted)}
+footer{margin-top:36px;font-size:.82rem;color:var(--muted)}
+footer a{color:inherit}
 </style></head><body><main>
-<h1>School Calendar</h1>
-<div class="meta">AEA + PBMS, curated &middot; Last updated {updated} &middot; {count} upcoming events</div>
-<div class="sub">Subscribe in Google Calendar (Other calendars &rarr; From URL):<br><code>{feed_url}</code></div>
-<h2>Latest changes <span style="text-transform:none;letter-spacing:0">({changed_at})</span></h2>
-{changes}
+
+<header>
+  <h1>School Calendar</h1>
+  <p>AEA + PBMS &mdash; days off, minimum days, conferences and family events. Everything else filtered out.</p>
+</header>
+
+<div class="status">
+  <span><span class="dot"></span>Last checked <b>$checked</b></span>
+  <span>Last change <b>$changed_at</b></span>
+  <span><b>$count</b> upcoming events</span>
+</div>
+
+<div class="next">$next_tiles</div>
+
+<section class="card">
+  <h2>Subscribe</h2>
+  <div class="btns">
+    <a class="btn primary" href="$google_url" target="_blank" rel="noopener">+ Google Calendar</a>
+    <a class="btn" href="$webcal_url">+ Apple / Outlook</a>
+    <a class="btn" href="school.ics" download>Download .ics</a>
+  </div>
+  <div class="url"><code id="feed">$feed_url</code><button class="btn" id="copy" type="button">Copy</button></div>
+  <p class="hint">Google Calendar on a computer: <b>Other calendars &rarr; + &rarr; From URL</b>, paste the link.
+  Subscribed calendars refresh on Google's schedule, usually within a day of a change here.</p>
+</section>
+
+<section class="card">
+  <h2>How to read titles</h2>
+  <div class="legend">
+    <span><span class="tag both">BOTH OFF</span> both kids home</span>
+    <span><span class="tag aea">AEA</span> elementary</span>
+    <span><span class="tag pbms">PBMS</span> middle</span>
+    <span><span class="tag alert">ONLY OFF</span> one kid home, one in school</span>
+    <span class="muted">(confirm) = district holiday not explicitly marked no school</span>
+  </div>
+</section>
+
+<h2>Latest changes <span class="muted" style="text-transform:none;letter-spacing:0">&middot; $changed_at</span></h2>
+$changes
+
 <h2>Upcoming</h2>
-<table>{rows}</table>
+<div class="chips" role="group" aria-label="Filter">
+  <button class="chip" data-f="all" aria-pressed="true">All</button>
+  <button class="chip" data-f="off" aria-pressed="false">Days off</button>
+  <button class="chip" data-f="aea" aria-pressed="false">AEA</button>
+  <button class="chip" data-f="pbms" aria-pressed="false">PBMS</button>
+</div>
+<div id="list">$rows</div>
+
+<footer>
+  Built daily from the AEA, PBMS and SDUSD district public calendars. Source dates are the schools'; check with the school if something looks off.
+  $repo_link
+</footer>
+
+<script>
+(function(){
+  var copy=document.getElementById('copy');
+  copy.addEventListener('click',function(){
+    var t=document.getElementById('feed').textContent;
+    (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){
+      copy.textContent='Copied';setTimeout(function(){copy.textContent='Copy'},1500);
+    },function(){
+      var r=document.createRange();r.selectNodeContents(document.getElementById('feed'));
+      var s=getSelection();s.removeAllRanges();s.addRange(r);
+    });
+  });
+  var chips=document.querySelectorAll('.chip');
+  chips.forEach(function(c){c.addEventListener('click',function(){
+    var f=c.dataset.f;
+    chips.forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+    document.querySelectorAll('#list .row').forEach(function(r){
+      r.hidden=!(f==='all'||r.dataset.tags.split(' ').indexOf(f)>=0);
+    });
+    document.querySelectorAll('#list .month').forEach(function(m){
+      var n=m.nextElementSibling,any=false;
+      while(n&&!n.classList.contains('month')){if(!n.hidden)any=true;n=n.nextElementSibling}
+      m.hidden=!any;
+    });
+  })});
+})();
+</script>
 </main></body></html>
-"""
+""")
 
 
-def css_class(summary):
-    if summary.startswith("[BOTH OFF]"):
+TAG_RE = re.compile(r"^((?:\[[^\]]+\]\s*)+)")
+
+
+def split_tags(summary):
+    """'[BOTH OFF] [PBMS] Winter Break' -> (['BOTH OFF','PBMS'], 'Winter Break')."""
+    m = TAG_RE.match(summary)
+    if not m:
+        return [], summary
+    return re.findall(r"\[([^\]]+)\]", m.group(1)), summary[m.end():].strip()
+
+
+def tag_class(tag):
+    if tag == "BOTH OFF":
         return "both"
-    if "ONLY OFF]" in summary:
+    if "ONLY OFF" in tag:
         return "alert"
-    return "aea" if summary.startswith("[AEA]") else "pbms"
+    return "aea" if tag.startswith("AEA") else "pbms"
 
 
-def write_page(events, changes, changed_at, path, feed_url):
+def row_flags(e):
+    """Which filter chips an event belongs to, and which kids are home."""
+    tags, _ = split_tags(e["summary"])
+    both = "BOTH OFF" in tags
+    off = both or e["kind"] in ("off", "confirm", "alert")
+    flags = {"aea" if e["school"] == "AEA" else "pbms"}
+    if both:
+        flags |= {"aea", "pbms"}
+    if off:
+        flags.add("off")
+    home = set()
+    if both:
+        home = {"AEA", "PBMS"}
+    elif off:
+        home = {e["school"]}
+    return flags, home
+
+
+def last_day(e):
+    return (e["end"] - dt.timedelta(days=1)) if e["all_day"] else e["end"].date()
+
+
+def write_page(events, changes, changed_at, path, feed_url, repo_url=None):
     today = dt.datetime.now(TZ).date()
-    upcoming = [e for e in events
-                if ((e["end"] - dt.timedelta(days=1)) if e["all_day"] else e["end"].date()) >= today]
+    upcoming = [e for e in events if last_day(e) >= today]
+
+    # Upcoming list
     rows, month = [], None
     for e in upcoming:
         d = e["start"] if e["all_day"] else e["start"].date()
         m = d.strftime("%B %Y")
         if m != month:
-            rows.append(f'<tr class="month"><td colspan="2">{m}</td></tr>')
+            rows.append(f'<div class="month">{m}</div>')
             month = m
-        rows.append(f'<tr><td class="w">{html.escape(when_text(e))}</td>'
-                    f'<td class="{css_class(e["summary"])}">{html.escape(e["summary"])}</td></tr>')
+        flags, _ = row_flags(e)
+        tags, title = split_tags(e["summary"])
+        pills = "".join(f'<span class="tag {tag_class(t)}">{html.escape(t)}</span>' for t in tags)
+        rows.append(f'<div class="row{" off" if "off" in flags else ""}" data-tags="{" ".join(sorted(flags))}">'
+                    f'<div class="w">{html.escape(when_text(e))}</div>'
+                    f'<div class="t">{pills}<span class="s">{html.escape(title)}</span></div></div>')
+    if not rows:
+        rows.append('<p class="muted">Nothing upcoming.</p>')
+
+    # "Next day off" tiles
+    def first(pred):
+        return next((e for e in upcoming if pred(e)), None)
+
+    def tile(cls, label, e):
+        if not e:
+            return (f'<div class="tile {cls}"><div class="lbl">{label}</div>'
+                    f'<div class="d">None listed</div></div>')
+        start = max(e["start"] if e["all_day"] else e["start"].date(), today)
+        days = (start - today).days
+        when = "Today" if days == 0 else "Tomorrow" if days == 1 else f"in {days} days"
+        _, title = split_tags(e["summary"])
+        title = re.sub(r"\s*—.*$", "", title)
+        return (f'<div class="tile {cls}"><div class="lbl">{label}</div>'
+                f'<div class="d">{html.escape(when_text(e))}</div>'
+                f'<div class="n">{when} &middot; {html.escape(title)}</div></div>')
+
+    tiles = (tile("t-both", "Next day both off", first(lambda e: row_flags(e)[1] == {"AEA", "PBMS"}))
+             + tile("t-aea", "Next AEA day off", first(lambda e: "AEA" in row_flags(e)[1]))
+             + tile("t-pbms", "Next PBMS day off", first(lambda e: "PBMS" in row_flags(e)[1])))
+
+    # Changes
     if changes:
-        ch = "<table>" + "".join(
-            f'<tr><td class="w">{a}</td><td>{html.escape(s)} <span class="meta">({html.escape(w)})</span></td></tr>'
-            for a, s, w in changes) + "</table>"
+        ch = "".join(f'<div class="chg"><span class="a {a}">{a}</span>'
+                     f'<span>{html.escape(s)} <span class="muted">&middot; {html.escape(w)}</span></span></div>'
+                     for a, s, w in changes)
     else:
-        ch = '<p class="meta">No changes yet.</p>'
-    now = dt.datetime.now(TZ).strftime("%a %b %-d, %Y at %-I:%M %p %Z")
+        ch = '<p class="muted">No changes yet. Edits the schools make will show up here.</p>'
+
+    webcal = re.sub(r"^https?://", "webcal://", feed_url)
+    google = "https://calendar.google.com/calendar/render?cid=" + urllib.parse.quote(webcal, safe="")
+    now = dt.datetime.now(TZ).strftime("%a %b %-d, %-I:%M %p")
+    repo = f'<a href="{html.escape(repo_url)}">Source on GitHub</a>.' if repo_url else ""
     with open(path, "w", encoding="utf-8") as f:
-        f.write(PAGE.format(updated=now, changed_at=html.escape(changed_at),
-                            count=len(upcoming), feed_url=html.escape(feed_url),
-                            changes=ch, rows="".join(rows)))
+        f.write(PAGE.substitute(
+            checked=now, changed_at=html.escape(changed_at), count=len(upcoming),
+            next_tiles=tiles, google_url=html.escape(google), webcal_url=html.escape(webcal),
+            feed_url=html.escape(feed_url), changes=ch, rows="".join(rows), repo_link=repo))
 
 
 def main():
@@ -487,7 +673,7 @@ def main():
             state = json.load(f)
     old = state.get("events", {})
     new = snapshot(curated)
-    now = dt.datetime.now(TZ).strftime("%a %b %-d, %Y at %-I:%M %p %Z")
+    now = dt.datetime.now(TZ).strftime("%a %b %-d, %-I:%M %p")
     if old:
         changes = diff(old, new)
         if changes:  # remember the most recent real change set
@@ -499,7 +685,8 @@ def main():
     write_ics(curated, os.path.join(OUT_DIR, "school.ics"))
     feed_url = os.environ.get("FEED_URL", "school.ics")
     write_page(curated, [tuple(c) for c in state["last_changes"]], state["last_changed"],
-               os.path.join(OUT_DIR, "index.html"), feed_url)
+               os.path.join(OUT_DIR, "index.html"), feed_url,
+               os.environ.get("REPO_URL"))
     with open(snap_path, "w") as f:
         json.dump(state, f, indent=1, sort_keys=True)
     print(f"{len(curated)} curated events, {len(state['last_changes'])} changes "

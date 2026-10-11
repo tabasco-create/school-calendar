@@ -31,6 +31,15 @@ FEEDS = {
     "DISTRICT": "https://calendar.google.com/calendar/ical/c_j6casa2h7m0c9gkg17l7eqjkm4%40group.calendar.google.com/public/basic.ics",
 }
 
+# Days off the source feeds leave out. Add a line per missing day:
+#   ("SCHOOL", "YYYY-MM-DD", "YYYY-MM-DD last day", "Title")
+# SCHOOL is "AEA" or "PBMS". These are treated exactly like a no-school day
+# from the feed (so they can combine into [BOTH OFF]).
+MANUAL_DAYS_OFF = [
+    # Not on the SDUSD district calendar feed, but PBMS is closed.
+    ("PBMS", "2026-10-12", "2026-10-12", "Indigenous Peoples' Day - NO SCHOOL"),
+]
+
 # ---------------------------------------------------------------- filters
 
 def rx(*words):
@@ -41,7 +50,7 @@ NO_SCHOOL = rx(r"no school", r"vacation", r"\bbreak\b", r"non-?instructional",
                r"school closed", r"schools closed", r"furlough")
 # Shortened day or schedule landmark worth seeing.
 SCHEDULE = rx(r"minimum day", r"early release", r"early dismissal",
-              r"late start", r"conferences?", r"first day of school",
+              r"late start", r"conferences?", r"^first day of school$",
               r"last day of school", r"reopens", r"semester (begins|ends|starts)",
               r"quarter ends", r"trimester ends", r"grades? (due|close)",
               r"report cards?")
@@ -67,7 +76,7 @@ NOT_OFF = rx(r"\((hindu|jewish|buddhist|muslim|islamic|christian|sikh|jain|"
 
 
 BACK_IN_SCHOOL = rx(r"reopens", r"school resumes", r"classes resume",
-                    r"back to school", r"returns? from", r"first day of school")
+                    r"back to school", r"returns? from", r"^first day of school$")
 
 
 def classify(source, summary):
@@ -213,6 +222,17 @@ def load_events(texts):
                 "uid": p.get("UID", ("", summary + str(start), ""))[1],
                 "raw": p,
             })
+    for school, first, last, title in MANUAL_DAYS_OFF:
+        start = dt.date.fromisoformat(first)
+        end = dt.date.fromisoformat(last) + dt.timedelta(days=1)
+        if end - dt.timedelta(days=1) < cutoff:
+            continue
+        out.append({
+            "source": "AEA" if school == "AEA" else "PBMS", "school": school,
+            "kind": "off", "summary": title, "start": start, "end": end,
+            "all_day": True, "uid": f"manual-{school}-{first}", "raw": {},
+            "desc": "Added manually: missing from the school/district calendar feed.",
+        })
     return out, tz_blocks
 
 

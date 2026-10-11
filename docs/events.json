@@ -184,10 +184,6 @@
    "summary": "[AEA] Spring semester begins",
    "when": "Mon Jan 11"
   },
-  "4o5im7iesb6o6d21963jsesvbm@google.com|2026-10-12": {
-   "summary": "[AEA] Indigenous People's Day - NO SCHOOL \u2014 PBMS not marked off",
-   "when": "Mon Oct 12"
-  },
   "50n5seh765u09prnccet8meo94@google.com|2018-03-12": {
    "summary": "[AEA] 2nd Grade Canned Food Drive",
    "when": "Mon Mar 12 \u2013 Fri Mar 23"
@@ -275,10 +271,6 @@
   "6smg14t574p29cv6allruoumvi@google.com|2024-02-27 09:30:00-08:00": {
    "summary": "[AEA] AEACES Kindergarten School Tour in English",
    "when": "Tue Feb 27, 9:30 am"
-  },
-  "70ni59pvnqh8fit3uau5fn8nor@google.com|2027-04-01": {
-   "summary": "[PBMS] First Day of School Library Month",
-   "when": "Thu Apr 1"
   },
   "750hka8c56mufjtnqocdpnshdh@google.com|2018-02-01": {
    "summary": "[AEA] Live Music Month Assemblies Elementary School - Lunchtime Performances",
@@ -371,6 +363,10 @@
   "both-4iij6n92eqk5a9siv20i4bbk1k@google.com|2026-11-23": {
    "summary": "[BOTH OFF] Fall vacation - NO SCHOOL",
    "when": "Mon Nov 23 \u2013 Fri Nov 27"
+  },
+  "both-4o5im7iesb6o6d21963jsesvbm@google.com|2026-10-12": {
+   "summary": "[BOTH OFF] Indigenous People's Day - NO SCHOOL",
+   "when": "Mon Oct 12"
   },
   "both-4ub19jvs1jq28rcc8viu3mriu5@google.com|2026-11-11": {
    "summary": "[BOTH OFF] Veterans' Day - NO SCHOOL (PBMS: confirm)",
@@ -613,17 +609,22 @@
    "when": "Fri Sep 11"
   }
  },
- "last_changed": "Sun Oct 11, 2026 at 12:00 PM PDT",
+ "last_changed": "Sun Oct 11, 12:17 PM",
  "last_changes": [
   [
    "Added",
-   "[AEA] No School \u2014 PBMS not marked off",
-   "Mon Nov 21"
+   "[BOTH OFF] Indigenous People's Day - NO SCHOOL",
+   "Mon Oct 12"
   ],
   [
    "Removed",
-   "[AEA] No School - Fall Break \u2014 PBMS not marked off",
-   "Mon Nov 21"
+   "[AEA] Indigenous People's Day - NO SCHOOL \u2014 PBMS not marked off",
+   "Mon Oct 12"
+  ],
+  [
+   "Removed",
+   "[PBMS] First Day of School Library Month",
+   "Thu Apr 1"
   ]
  ]
 }

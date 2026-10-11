@@ -32,3 +32,7 @@ and commits the refreshed `docs/` folder. Run it manually from the **Actions** t
 feeds on its own schedule, usually every 12–24 hours.
 
 To change what's kept, edit the keyword lists at the top of `build_calendar.py`.
+
+**A day off is missing?** The source feeds aren't always complete (the district feed
+left out Indigenous Peoples' Day 2026). Add a line to `MANUAL_DAYS_OFF` near the top
+of `build_calendar.py`, e.g. `("PBMS", "2026-10-12", "2026-10-12", "Indigenous Peoples' Day - NO SCHOOL")`.

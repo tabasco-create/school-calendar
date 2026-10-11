@@ -38,6 +38,8 @@ FEEDS = {
 MANUAL_DAYS_OFF = [
     # Not on the SDUSD district calendar feed, but PBMS is closed.
     ("PBMS", "2026-10-12", "2026-10-12", "Indigenous Peoples' Day - NO SCHOOL"),
+    # PBMS's last day is May 26; AEA runs to June 4. Marks the gap.
+    ("PBMS", "2027-05-27", "2027-06-04", "Summer break - PBMS done for the year"),
 ]
 
 # ---------------------------------------------------------------- filters
@@ -70,6 +72,9 @@ AB_WEEK = re.compile(r"^\s*[AB]\s*week\s*$", re.I)
 # AEA middle-school-only events (our AEA student is in elementary).
 AEA_MIDDLE_ONLY = rx(r"\bMS\b", r"middle school", r"\bAEACMS\b",
                      r"baccalaureate", r"\bIB\b", r"6th", r"7th", r"8th grade")
+# Staff/awareness observances that aren't family events.
+OBSERVANCE = rx(r"\(annually", r"appreciation", r"hero day", r"principals'? day",
+                r"teachers'? day", r"nurses'? day", r"custodi")
 # Things that look like holidays but aren't days off.
 NOT_OFF = rx(r"\((hindu|jewish|buddhist|muslim|islamic|christian|sikh|jain|"
              r"bahai|baha'i|religious)( holiday)?\)", r"^halloween$")
@@ -85,7 +90,7 @@ def classify(source, summary):
     if BACK_IN_SCHOOL.search(s):  # "School Reopens from Winter Break" isn't a day off
         return True, "schedule"
     if source == "AEA":
-        if AB_WEEK.match(s) or MEETINGS.search(s):
+        if AB_WEEK.match(s) or MEETINGS.search(s) or OBSERVANCE.search(s):
             return False, None
         if AEA_MIDDLE_ONLY.search(s) and not NO_SCHOOL.search(s):
             return False, None

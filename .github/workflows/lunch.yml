@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  actions: write      # lets the keep-alive step reset GitHub's 60-day inactivity timer
 
 concurrency:
   group: push-to-main
@@ -41,3 +42,10 @@ jobs:
           git commit -m "Update lunch menus"
           git pull --rebase
           git push
+
+      - name: Keep schedule alive
+        # GitHub disables scheduled workflows after 60 days of repo inactivity. Re-enabling the
+        # workflow on every run resets that timer, so the daily schedule never lapses.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow enable lunch.yml || echo "Could not re-enable (harmless)."

@@ -1,0 +1,43 @@
+name: Update lunch menus
+
+# Wakes daily but only downloads on the 1st and 15th, or while the current
+# month's AEA menu hasn't been posted yet. "Run workflow" always downloads.
+on:
+  schedule:
+    - cron: "47 13 * * *"   # ~6:47 AM Pacific, after the calendar build
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: push-to-main
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install pdfplumber
+
+      - name: AEA elementary lunch (current + next month)
+        run: python lunch/aea_lunch.py ${{ github.event_name == 'schedule' && '--scheduled' || '' }}
+
+      - name: Check SDUSD menu PDF for changes
+        run: python lunch/sdusd_check.py ${{ github.event_name == 'schedule' && '--scheduled' || '' }}
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add docs/lunch
+          git diff --cached --quiet && exit 0
+          git commit -m "Update lunch menus"
+          git pull --rebase
+          git push

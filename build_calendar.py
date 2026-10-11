@@ -490,6 +490,22 @@ font-size:.82rem;overflow-x:auto;white-space:nowrap}
 .muted{color:var(--muted)}
 footer{margin-top:36px;font-size:.82rem;color:var(--muted)}
 footer a{color:inherit}
+.lunch-head{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.lunch-head h2{margin:0;flex:1}
+.lunch-head .btn{padding:4px 10px;font-size:.85rem}
+#lunch-range{font-size:.88rem;font-weight:600;min-width:118px;text-align:center}
+.lg{display:grid;grid-template-columns:96px 1fr 1fr;font-size:.9rem}
+.lg>div{padding:8px 10px;border-top:1px solid var(--line)}
+.lg .lh{border-top:none;font-size:.74rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700;padding-top:0}
+.lg .lh.aea{color:var(--aea)} .lg .lh.pbms{color:var(--pbms)}
+.lg .ld{font-weight:600} .lg .ld small{display:block;font-weight:400;color:var(--muted)}
+.lg .now{background:var(--bg)}
+.lg ul{margin:0;padding-left:16px} .lg li+li{margin-top:1px}
+.lunch-note{font-size:.84rem;margin:10px 0 0;padding:8px 10px;border-radius:8px;background:var(--alert-bg);color:var(--alert)}
+.lunch-note a,#lunch-src a{color:inherit}
+@media (max-width:560px){.lg{grid-template-columns:1fr}.lg .lh{display:none}
+.lg .ld{border-top-width:2px}.lg .aea:not(.lh)::before,.lg .pbms:not(.lh)::before{display:block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.lg .aea:not(.lh)::before{content:"AEA";color:var(--aea)} .lg .pbms:not(.lh)::before{content:"PBMS";color:var(--pbms)}}
 </style></head><body><main>
 
 <header>
@@ -504,6 +520,18 @@ footer a{color:inherit}
 </div>
 
 <div class="next">$next_tiles</div>
+
+<section class="card" id="lunch">
+  <div class="lunch-head">
+    <h2>Lunch</h2>
+    <button class="btn" id="lunch-prev" type="button" aria-label="Previous week">&lsaquo;</button>
+    <span id="lunch-range"></span>
+    <button class="btn" id="lunch-next" type="button" aria-label="Next week">&rsaquo;</button>
+  </div>
+  <div class="lg" id="lunch-grid"><p class="muted">Loading menus&hellip;</p></div>
+  <div id="lunch-notes"></div>
+  <p class="hint" id="lunch-src"></p>
+</section>
 
 <section class="card">
   <h2>Subscribe</h2>
@@ -570,6 +598,47 @@ $changes
       m.hidden=!any;
     });
   })});
+})();
+</script>
+<script>
+(function(){
+  // Lunch menus: docs/lunch/*.json, refreshed by the lunch workflow.
+  var DAYS=['Monday','Tuesday','Wednesday','Thursday','Friday'], aea=null, sd=null, off=0;
+  function pad(n){return (n<10?'0':'')+n}
+  function iso(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function fmt(d){return d.toLocaleDateString(undefined,{month:'short',day:'numeric'})}
+  function list(items,empty){return items&&items.length?'<ul>'+items.map(function(i){return '<li>'+esc(i)+'</li>'}).join('')+'</ul>':'<span class="muted">'+empty+'</span>'}
+  function monday(o){var d=new Date();d.setHours(0,0,0,0);var w=d.getDay();
+    if(w===6)d.setDate(d.getDate()+2);else if(w===0)d.setDate(d.getDate()+1);
+    d.setDate(d.getDate()-(d.getDay()-1)+o*7);return d}
+  function aeaCell(k){var m=aea&&aea.months[k.slice(0,7)];
+    if(!m)return '<span class="muted">Not posted yet</span>';
+    if(m.days[k])return list(m.days[k]);
+    if(m.status!=='ok')return '<a href="'+esc(m.source)+'">See PDF</a>';
+    return '<span class="muted">No lunch listed</span>'}
+  function render(){
+    var mon=monday(off),today=iso(new Date()),fri=new Date(mon);fri.setDate(mon.getDate()+4);
+    document.getElementById('lunch-range').textContent=fmt(mon)+' – '+fmt(fri);
+    var h='<div class="lh"></div><div class="lh aea">AEA</div><div class="lh pbms">PBMS</div>';
+    DAYS.forEach(function(name,i){var d=new Date(mon);d.setDate(mon.getDate()+i);
+      var k=iso(d),c=k===today?' now':'';
+      h+='<div class="ld'+c+'">'+name.slice(0,3)+'<small>'+fmt(d)+'</small></div>'
+        +'<div class="aea'+c+'">'+aeaCell(k)+'</div>'
+        +'<div class="pbms'+c+'">'+list(sd&&sd.weekly[name],'No menu')+'</div>'});
+    document.getElementById('lunch-grid').innerHTML=h;
+    var notes=[],m=aea&&aea.months[iso(mon).slice(0,7)];
+    if(m&&m.status!=='ok')notes.push('AEA menu couldn’t be read automatically — <a href="'+esc(m.source)+'">open the PDF</a>.');
+    if(sd&&sd.changed)notes.push('SDUSD posted a new lunch menu — <a href="'+esc(sd.pdf)+'">see the PDF</a>. PBMS items may be out of date.');
+    document.getElementById('lunch-notes').innerHTML=notes.map(function(n){return '<p class="lunch-note">'+n+'</p>'}).join('');
+    var src=['<a href="'+(m?esc(m.source):'#')+'">AEA menu PDF</a>'];
+    if(sd)src.push('<a href="'+esc(sd.pdf)+'">SDUSD menu PDF</a> (same every week, '+esc(sd.term)+')');
+    document.getElementById('lunch-src').innerHTML='Sources: '+src.join(' &middot; ')+'. Menus subject to change.'}
+  function get(u){return fetch(u,{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).catch(function(){return null})}
+  Promise.all([get('lunch/aea.json'),get('lunch/sdusd.json')]).then(function(r){aea=r[0];sd=r[1];
+    if(!aea&&!sd){document.getElementById('lunch').hidden=true;return}render()});
+  document.getElementById('lunch-prev').onclick=function(){off--;render()};
+  document.getElementById('lunch-next').onclick=function(){off++;render()};
 })();
 </script>
 </main></body></html>

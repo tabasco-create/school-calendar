@@ -1,0 +1,143 @@
+{
+  "months": {
+    "2026-10": {
+      "source": "https://www.aeacs.org/wp-content/uploads/2026/10/2026-October-Elementary-Menu.pdf",
+      "checked": "2026-10-11T20:09+00:00",
+      "days": {
+        "2026-10-01": [
+          "Bean & Cheese Pupusa w/ Pinto Beans",
+          "Cheese Tamale w/ Black Beans",
+          "Southwest Chicken Salad w/ WG Dinner Roll",
+          "Turkey & Cheese Sandwich w/ Roasted Fava Beans"
+        ],
+        "2026-10-02": [
+          "Cheese Pizza",
+          "Pepperoni Pizza",
+          "Bean & Cheese Burrito",
+          "Wowbutter (Soybutter) & Jelly Sandwich"
+        ],
+        "2026-10-05": [
+          "Chicken Bites w/ Mashed Potatoes",
+          "Soy Veggie Burger w/ Potato Wedges",
+          "P'B&J Sandwich Kit (Seedbutter) w/ Tajin Corn",
+          "Turkey & Cheese Sandwich on Pretzel Bun w/ Tajin Corn"
+        ],
+        "2026-10-06": [
+          "Beef & Cheese Taco Stick w/ Baby Carrots",
+          "Cheese Lasagna w/ Marinara & Graham Crackers",
+          "Chicken Salad Sandwich w/ Baby Carrots",
+          "Yogurt w/ String Cheese, Granola & Baby Carrots"
+        ],
+        "2026-10-07": [
+          "Chicken Teriyaki w/ Not So Fried Rice & Diced Carrot",
+          "Bean & Cheese Pupusa w/ Curtido Salad",
+          "Chicken Alfredo Pasta w/ Seasoned Peas",
+          "Cheese Pizza Kit"
+        ],
+        "2026-10-08": [
+          "Grilled Cheese Sandwich w/ Roasted Fava Beans",
+          "Chicken Tamale w/ Pinto Beans",
+          "Veggie Chef Salad w/ Egg, Dinner Roll & Ranch",
+          "Turkey & Cheese Sandwich w/ Roasted Fava Beans"
+        ],
+        "2026-10-09": [
+          "Cheese Pizza",
+          "Pepperoni Pizza",
+          "Crispy Chicken Sandwich",
+          "Wowbutter (Soybutter) & Jelly Sandwich"
+        ],
+        "2026-10-12": [
+          "Bean & Cheese Burrito w/ Corn Tajin",
+          "Orange Chicken with Brown Rice, Peas, and Goldfish Grahams",
+          "Mantecada Muffin w/ Yogurt & String Cheese & Tajin Corn",
+          "Wowbutter & Jelly Sandwich w/ Tajin Corn"
+        ],
+        "2026-10-13": [
+          "Parm Pizza Bites w/ Marinara Dipping Sauce",
+          "Pineapple Teriyaki Chicken w/ Rice & Diced Carrots",
+          "Seedbutter w/ String Cheese, Wheat Crackers, & Baby Carrots",
+          "Italian Turkey Trio on Hoagie w/ Baby Carrots"
+        ],
+        "2026-10-14": [
+          "Chicken Dumplings w/ Mixed Veggies",
+          "Mac & Cheese w/ Mixed Vegetables",
+          "Sesame Beef Bowl w/ Broccoli",
+          "P'B&J Sandwich Kit (Seedbutter) w/ Baby Carrots"
+        ],
+        "2026-10-15": [
+          "BBQ Chicken w/ Baked Beans & Dinner Roll",
+          "Bean & Cheese Pupusa w/ Pinto Beans",
+          "Egg Salad Sandwich w/ Churro Fava Beans",
+          "Turkey & Cheese Sandwich w/ Roasted Fava Beans"
+        ],
+        "2026-10-16": [
+          "Cheese Pizza",
+          "Pepperoni Pizza",
+          "Bean & Cheese Burrito",
+          "Chicken Caesar Salad with Dinner Roll & Croutons"
+        ],
+        "2026-10-19": [
+          "Cheeseburger w/ Oven Baked Fries",
+          "Bean Burrito Bowl w/ Rice & Corn",
+          "Beef & Cheese Taco Stick w/ Corn Tajin",
+          "Turkey & Cheese Sub Sandwich w/ Tajin Corn"
+        ],
+        "2026-10-20": [
+          "Penne & Meat Sauce",
+          "Bean & Cheese Burrito w/ Baby Carrots",
+          "P'B&J Sandwich Kit (Seedbutter) w/ Baby Carrots",
+          "Cheese Pizza Kit"
+        ],
+        "2026-10-21": [
+          "Parm Pizza Bites w/ Marinara Dipping Sauce",
+          "Grilled Cheese Sandwich w/ Baby Carrots",
+          "Firecracker Chicken Dumplings & Peas",
+          "Asian Chicken Salad w/ WG Crispy Noodles"
+        ],
+        "2026-10-22": [
+          "Cheese Tamale w/ Black Beans",
+          "Turkey Nachos w/ Refried Beans & Tortilla Chips",
+          "Wowbutter Jelly Sandwich w/ Roasted Fava Beans",
+          "Southwest Chicken Salad w/ WG Dinner Roll"
+        ],
+        "2026-10-23": [
+          "Cheese Pizza",
+          "Pepperoni Pizza",
+          "Beef, Bean & Cheese Burrito",
+          "Turkey & Cheese Sub Sandwich"
+        ],
+        "2026-10-26": [
+          "Chicken Bites w/ Mashed Potatoes",
+          "Soy Veggie Burger w/ Potato Wedges",
+          "P'B&J Sandwich Kit (Seedbutter) w/ Tajin Corn",
+          "Turkey & Cheese Sandwich on Pretzel Bun w/ Tajin Corn"
+        ],
+        "2026-10-27": [
+          "Beef & Cheese Taco Stick w/ Baby Carrots",
+          "Cheese Lasagna w/ Marinara & Graham Crackers",
+          "Chicken Salad Sandwich w/ Baby Carrots",
+          "Yogurt w/ String Cheese, Granola & Baby Carrots"
+        ],
+        "2026-10-28": [
+          "Chicken Teriyaki w/ Not So Fried Rice & Diced Carrot",
+          "Bean & Cheese Pupusa w/ Curtido Salad",
+          "Chicken Alfredo Pasta w/ Seasoned Peas",
+          "Cheese Pizza Kit"
+        ],
+        "2026-10-29": [
+          "Grilled Cheese Sandwich w/ Roasted Fava Beans",
+          "Chicken Tamale w/ Pinto Beans",
+          "Veggie Chef Salad w/ Egg, Dinner Roll & Ranch",
+          "Turkey & Cheese Sandwich w/ Roasted Fava Beans"
+        ],
+        "2026-10-30": [
+          "Cheese Pizza",
+          "Pepperoni Pizza",
+          "Crispy Chicken Sandwich",
+          "Wowbutter (Soybutter) & Jelly Sandwich"
+        ]
+      },
+      "status": "ok"
+    }
+  }
+}

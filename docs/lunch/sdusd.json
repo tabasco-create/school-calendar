@@ -1,0 +1,42 @@
+{
+  "title": "SDUSD Middle/High School Lunch",
+  "term": "Fall 2026-2027",
+  "note": "Same menu every week this semester.",
+  "source_page": "https://www.sandiegounified.org/departments/food___nutrition_services___sandi_coast_cafe_/menus___special_diets",
+  "pdf": "https://drive.google.com/file/d/1YU3Td0kzElpdpySaMd5pQGO1k5lb9Lrw/view",
+  "pdf_sha256": "f52dc8a0993216e546a99fa13335bac6e9e3dedeb6afbccecb418cbe62cb9262",
+  "changed": false,
+  "checked": null,
+  "weekly": {
+    "Monday": [
+      "Orange Chicken w/ Brown Rice",
+      "Cheese or Turkey Pepperoni Pizza",
+      "Buffalo Chicken Wrap",
+      "Bistro Box (SunButter & Strawberry Sandwich, Crackers, Cheese Stick)"
+    ],
+    "Tuesday": [
+      "Spicy Chicken Sandwich",
+      "Walking Nachos (Beef) w/ Salsa Fresca",
+      "Mozz Breadsticks w/ Homemade Marinara",
+      "Ava's Avocado Salad"
+    ],
+    "Wednesday": [
+      "All Beef Hot Dog, Honey BBQ SunChips",
+      "Quesabirria (Beef) w/ Salsa Fresca",
+      "Turkey & Pepper Jack Sandwich",
+      "Baja Hummus Plate (Pita Chips, Pico de Gallo)"
+    ],
+    "Thursday": [
+      "Bacon Cheeseburger",
+      "Hot Honey Chicken w/ Fried Rice",
+      "Mac & Cheese w/ Garlic Knot",
+      "Grilled Chicken Caesar Salad"
+    ],
+    "Friday": [
+      "Chicken Tenders w/ Onion Rings",
+      "California Carnitas (Pork) Burrito",
+      "Baja Fish Tacos w/ Pico de Gallo",
+      "Yogurt Parfait w/ Blueberry Bites"
+    ]
+  }
+}

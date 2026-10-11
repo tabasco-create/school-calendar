@@ -64,10 +64,6 @@
    "summary": "[AEA] 4th Grade Field Trip to Old Town",
    "when": "Mon Jan 28"
   },
-  "1h6f7qt9ajf5r2pvigc6nfc8hr@google.com|2023-10-02": {
-   "summary": "[AEA] Custodian's Day",
-   "when": "Mon Oct 2"
-  },
   "1iake56gg6mus5u7pdviaaa1cu@google.com|2027-06-19": {
    "summary": "[AEA] Juneteenth",
    "when": "Sat Jun 19"
@@ -148,17 +144,9 @@
    "summary": "[AEA] Spring semester ends",
    "when": "Fri Jun 4"
   },
-  "41o6cq8vi9rslhbfhpghl3jor9@google.com|2023-10-16": {
-   "summary": "[AEA] Boss's Day (Annually)",
-   "when": "Mon Oct 16"
-  },
   "45ssdji37evnn5149e6b7uhbk0@google.com|2025-03-17 15:15:00-07:00": {
    "summary": "[AEA] Book Fair in the library (elementary)",
    "when": "Mon Mar 17, 3:15 pm"
-  },
-  "4fmhou2409btrikqj84vfsumts@google.com|2008-05-12": {
-   "summary": "[AEA] Staff Appreciation Days",
-   "when": "Mon May 12"
   },
   "4gpr3m604a5pg4i5njs2fg6kek@google.com|2018-05-03 09:25:00-07:00": {
    "summary": "[AEA] 5 D and E:  A1- German Language Diploma Test",
@@ -171,10 +159,6 @@
   "4i859lakmvb359o2skarih5ou1@google.com|2027-03-17": {
    "summary": "[AEA] Minimum days - Parent/Teacher Conferences",
    "when": "Wed Mar 17 \u2013 Fri Mar 19"
-  },
-  "4l180687iqubrvpjbnj0ahb712@google.com|2025-05-02": {
-   "summary": "[AEA] Annual School Lunch Hero Day",
-   "when": "Fri May 2"
   },
   "4l3g1irs9sdmd0j9ghadu4vrc8@google.com|2017-03-20": {
    "summary": "[AEA] ES Book Fair",
@@ -284,9 +268,9 @@
    "summary": "[AEA] 5th grade German Language Exam A2 - Reading Comprehension",
    "when": "Wed Apr 18, 8:00 am"
   },
-  "7af17h3vme7h6m3t6kh54j97tt@google.com|2023-05-01": {
-   "summary": "[AEA] Principals' Day (Annually on May 1)",
-   "when": "Mon May 1"
+  "796e94ahjqgies19fj4pqakokk@google.com|2027-05-31": {
+   "summary": "[BOTH OFF] [AEA] Memorial Day - NO SCHOOL",
+   "when": "Mon May 31"
   },
   "7bmhp9rggojl6na1u4eranc8ng@google.com|2027-06-19": {
    "summary": "[PBMS] Juneteenth (confirm)",
@@ -380,10 +364,6 @@
    "summary": "[BOTH OFF] Martin Luther King Jr. Day - NO SCHOOL",
    "when": "Mon Jan 18"
   },
-  "both-796e94ahjqgies19fj4pqakokk@google.com|2027-05-31": {
-   "summary": "[BOTH OFF] Memorial Day - NO SCHOOL (PBMS: confirm)",
-   "when": "Mon May 31"
-  },
   "bqr0sg4qvv7o6qb2sm84lkkmss@google.com|2011-05-18 12:40:00-07:00": {
    "summary": "[AEA] Meditation Initiative - everyone invited!",
    "when": "Wed May 18, 12:40 pm"
@@ -472,6 +452,10 @@
    "summary": "[AEA] Pastries with the Principal",
    "when": "Wed Sep 4, 8:20 am"
   },
+  "manual-PBMS-2027-05-27|2027-05-27": {
+   "summary": "[PBMS] Summer break - PBMS done for the year",
+   "when": "Thu May 27 \u2013 Fri Jun 4"
+  },
   "mhgujotohmis9dl05o0e432ipk@google.com|2008-04-21": {
    "summary": "[AEA] Minimum Day",
    "when": "Mon Apr 21"
@@ -507,6 +491,14 @@
   "only-AEA-2027-03-22|2027-03-22": {
    "summary": "[AEA ONLY OFF] PBMS is in school Mar 22\u2013Mar 26",
    "when": "Mon Mar 22 \u2013 Fri Mar 26"
+  },
+  "only-PBMS-2027-05-27|2027-05-27": {
+   "summary": "[PBMS ONLY OFF] AEA is in school May 27\u2013May 28",
+   "when": "Thu May 27 \u2013 Fri May 28"
+  },
+  "only-PBMS-2027-06-01|2027-06-01": {
+   "summary": "[PBMS ONLY OFF] AEA is in school Jun 1\u2013Jun 4",
+   "when": "Tue Jun 1 \u2013 Fri Jun 4"
   },
   "orbd6hbilitoifvncmc2ut8fvk@google.com|2009-01-10 09:00:00-08:00": {
    "summary": "[AEA] Garden with your family at AEA",
@@ -609,17 +601,57 @@
    "when": "Fri Sep 11"
   }
  },
- "last_changed": "Sun Oct 11, 12:18 PM",
+ "last_changed": "Sun Oct 11, 12:19 PM",
  "last_changes": [
   [
    "Added",
-   "[AEA] No School - Fall Break \u2014 PBMS not marked off",
-   "Mon Nov 21"
+   "[PBMS ONLY OFF] AEA is in school May 27\u2013May 28",
+   "Thu May 27 \u2013 Fri May 28"
+  ],
+  [
+   "Added",
+   "[PBMS] Summer break - PBMS done for the year",
+   "Thu May 27 \u2013 Fri Jun 4"
+  ],
+  [
+   "Added",
+   "[BOTH OFF] [AEA] Memorial Day - NO SCHOOL",
+   "Mon May 31"
+  ],
+  [
+   "Added",
+   "[PBMS ONLY OFF] AEA is in school Jun 1\u2013Jun 4",
+   "Tue Jun 1 \u2013 Fri Jun 4"
   ],
   [
    "Removed",
-   "[AEA] No School \u2014 PBMS not marked off",
-   "Mon Nov 21"
+   "[AEA] Custodian's Day",
+   "Mon Oct 2"
+  ],
+  [
+   "Removed",
+   "[AEA] Boss's Day (Annually)",
+   "Mon Oct 16"
+  ],
+  [
+   "Removed",
+   "[AEA] Staff Appreciation Days",
+   "Mon May 12"
+  ],
+  [
+   "Removed",
+   "[AEA] Annual School Lunch Hero Day",
+   "Fri May 2"
+  ],
+  [
+   "Removed",
+   "[AEA] Principals' Day (Annually on May 1)",
+   "Mon May 1"
+  ],
+  [
+   "Removed",
+   "[BOTH OFF] Memorial Day - NO SCHOOL (PBMS: confirm)",
+   "Mon May 31"
   ]
  ]
 }

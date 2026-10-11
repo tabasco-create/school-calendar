@@ -2,24 +2,140 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>School Calendar</title>
+<meta name="description" content="Curated AEA + PBMS school calendar: days off, minimum days, conferences and family events.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>">
 <style>
-:root{--bg:#fbfaf7;--fg:#1d1d1b;--muted:#6b6a65;--line:#e4e2dc;--both:#2f6f4f;--aea:#2b5ea7;--pbms:#9a4d16;--alert:#b3261e}
-@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#ecebe6;--muted:#9c9b95;--line:#2c2b29;--both:#6fc49a;--aea:#86aef0;--pbms:#f0a46a;--alert:#ff8a80}}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,system-ui,Segoe UI,sans-serif}
-main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
-h1{font-size:1.6rem;margin:0 0 4px} h2{font-size:1.05rem;margin:32px 0 8px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.meta{color:var(--muted);font-size:.9rem}
-.sub{margin:16px 0;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:.9rem;word-break:break-all}
-table{width:100%;border-collapse:collapse} td{padding:7px 8px 7px 0;border-bottom:1px solid var(--line);vertical-align:top}
-td.w{white-space:nowrap;color:var(--muted);width:1%;padding-right:16px;font-variant-numeric:tabular-nums}
-.both{color:var(--both);font-weight:600} .aea{color:var(--aea)} .pbms{color:var(--pbms)} .alert{color:var(--alert);font-weight:600}
-.month td{border:0;padding-top:20px;font-weight:600}
+:root{--bg:#f7f4ee;--card:#fffdf9;--fg:#22211e;--muted:#6e6a61;--line:#e3ddd1;
+--both:#2e6b4c;--both-bg:#e3f0e8;--aea:#2a5aa0;--aea-bg:#e4ecf8;--pbms:#9b4a12;--pbms-bg:#f8e9dd;
+--alert:#b02a20;--alert-bg:#fbe5e2;--accent:#22211e;--accent-fg:#fffdf9}
+@media (prefers-color-scheme:dark){:root{--bg:#151513;--card:#1e1d1a;--fg:#ecebe6;--muted:#9d998f;--line:#302e2a;
+--both:#7fcfa2;--both-bg:#1d2e24;--aea:#8fb4f2;--aea-bg:#1c2536;--pbms:#f2a96f;--pbms-bg:#33241a;
+--alert:#ff8f84;--alert-bg:#3a1e1b;--accent:#ecebe6;--accent-fg:#151513}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif}
+main{max-width:780px;margin:0 auto;padding:28px 16px 64px}
+header h1{font-size:1.9rem;line-height:1.15;margin:0;letter-spacing:-.01em}
+header p{margin:4px 0 0;color:var(--muted)}
+.status{display:flex;flex-wrap:wrap;gap:6px 18px;margin:14px 0 22px;font-size:.88rem;color:var(--muted)}
+.status b{color:var(--fg);font-weight:600}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--both);margin-right:6px;vertical-align:1px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:16px}
+h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:30px 0 10px}
+.card h2{margin-top:0}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 12px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border-radius:8px;border:1px solid var(--line);
+background:var(--card);color:var(--fg);font:inherit;font-size:.92rem;font-weight:600;text-decoration:none;cursor:pointer}
+.btn.primary{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.btn:hover{filter:brightness(.96)}
+.url{display:flex;gap:8px;align-items:stretch}
+.url code{flex:1;min-width:0;padding:8px 10px;border-radius:8px;background:var(--bg);border:1px solid var(--line);
+font-size:.82rem;overflow-x:auto;white-space:nowrap}
+.hint{font-size:.84rem;color:var(--muted);margin:10px 0 0}
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.tile{border-radius:12px;padding:12px 14px}
+.tile .lbl{font-size:.74rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700}
+.tile .d{font-size:1.15rem;font-weight:700;margin-top:2px}
+.tile .n{font-size:.84rem;margin-top:2px;opacity:.85}
+.t-both{background:var(--both-bg);color:var(--both)} .t-aea{background:var(--aea-bg);color:var(--aea)} .t-pbms{background:var(--pbms-bg);color:var(--pbms)}
+@media (max-width:560px){.next{grid-template-columns:1fr}}
+.legend{display:flex;flex-wrap:wrap;gap:8px;font-size:.84rem}
+.tag{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.76rem;font-weight:700;white-space:nowrap}
+.tag.both{background:var(--both-bg);color:var(--both)} .tag.aea{background:var(--aea-bg);color:var(--aea)}
+.tag.pbms{background:var(--pbms-bg);color:var(--pbms)} .tag.alert{background:var(--alert-bg);color:var(--alert)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.chip{padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);font:inherit;font-size:.85rem;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.month{font-weight:700;margin:18px 0 4px;font-size:1rem}
+.row{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
+.row .w{color:var(--muted);font-size:.9rem;font-variant-numeric:tabular-nums}
+.row .t{display:flex;flex-wrap:wrap;gap:6px;align-items:baseline}
+.row.off .t span.s{font-weight:600}
+@media (max-width:560px){.row{grid-template-columns:1fr;gap:2px}}
+.chg{display:grid;grid-template-columns:80px 1fr;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.chg .a{font-weight:700} .chg .a.Added{color:var(--both)} .chg .a.Removed{color:var(--alert)} .chg .a.Changed{color:var(--pbms)}
+.muted{color:var(--muted)}
+footer{margin-top:36px;font-size:.82rem;color:var(--muted)}
+footer a{color:inherit}
 </style></head><body><main>
-<h1>School Calendar</h1>
-<div class="meta">AEA + PBMS, curated &middot; Last updated Sun Oct 11, 2026 at 12:00 PM PDT &middot; 33 upcoming events</div>
-<div class="sub">Subscribe in Google Calendar (Other calendars &rarr; From URL):<br><code>https://tabasco-create.github.io/school-calendar/school.ics</code></div>
-<h2>Latest changes <span style="text-transform:none;letter-spacing:0">(Sun Oct 11, 2026 at 12:00 PM PDT)</span></h2>
-<table><tr><td class="w">Added</td><td>[AEA] No School — PBMS not marked off <span class="meta">(Mon Nov 21)</span></td></tr><tr><td class="w">Removed</td><td>[AEA] No School - Fall Break — PBMS not marked off <span class="meta">(Mon Nov 21)</span></td></tr></table>
+
+<header>
+  <h1>School Calendar</h1>
+  <p>AEA + PBMS &mdash; days off, minimum days, conferences and family events. Everything else filtered out.</p>
+</header>
+
+<div class="status">
+  <span><span class="dot"></span>Last checked <b>Sun Oct 11, 12:10 PM</b></span>
+  <span>Last change <b>Sun Oct 11, 2026 at 12:00 PM PDT</b></span>
+  <span><b>33</b> upcoming events</span>
+</div>
+
+<div class="next"><div class="tile t-both"><div class="lbl">Next day both off</div><div class="d">Wed Nov 11</div><div class="n">in 31 days &middot; Veterans&#x27; Day - NO SCHOOL (PBMS: confirm)</div></div><div class="tile t-aea"><div class="lbl">Next AEA day off</div><div class="d">Mon Oct 12</div><div class="n">Tomorrow &middot; Indigenous People&#x27;s Day - NO SCHOOL</div></div><div class="tile t-pbms"><div class="lbl">Next PBMS day off</div><div class="d">Wed Nov 11</div><div class="n">in 31 days &middot; Veterans&#x27; Day - NO SCHOOL (PBMS: confirm)</div></div></div>
+
+<section class="card">
+  <h2>Subscribe</h2>
+  <div class="btns">
+    <a class="btn primary" href="https://calendar.google.com/calendar/render?cid=webcal%3A%2F%2Ftabasco-create.github.io%2Fschool-calendar%2Fschool.ics" target="_blank" rel="noopener">+ Google Calendar</a>
+    <a class="btn" href="webcal://tabasco-create.github.io/school-calendar/school.ics">+ Apple / Outlook</a>
+    <a class="btn" href="school.ics" download>Download .ics</a>
+  </div>
+  <div class="url"><code id="feed">https://tabasco-create.github.io/school-calendar/school.ics</code><button class="btn" id="copy" type="button">Copy</button></div>
+  <p class="hint">Google Calendar on a computer: <b>Other calendars &rarr; + &rarr; From URL</b>, paste the link.
+  Subscribed calendars refresh on Google's schedule, usually within a day of a change here.</p>
+</section>
+
+<section class="card">
+  <h2>How to read titles</h2>
+  <div class="legend">
+    <span><span class="tag both">BOTH OFF</span> both kids home</span>
+    <span><span class="tag aea">AEA</span> elementary</span>
+    <span><span class="tag pbms">PBMS</span> middle</span>
+    <span><span class="tag alert">ONLY OFF</span> one kid home, one in school</span>
+    <span class="muted">(confirm) = district holiday not explicitly marked no school</span>
+  </div>
+</section>
+
+<h2>Latest changes <span class="muted" style="text-transform:none;letter-spacing:0">&middot; Sun Oct 11, 2026 at 12:00 PM PDT</span></h2>
+<div class="chg"><span class="a Added">Added</span><span>[AEA] No School — PBMS not marked off <span class="muted">&middot; Mon Nov 21</span></span></div><div class="chg"><span class="a Removed">Removed</span><span>[AEA] No School - Fall Break — PBMS not marked off <span class="muted">&middot; Mon Nov 21</span></span></div>
+
 <h2>Upcoming</h2>
-<table><tr class="month"><td colspan="2">October 2026</td></tr><tr><td class="w">Mon Oct 12</td><td class="aea">[AEA] Indigenous People&#x27;s Day - NO SCHOOL — PBMS not marked off</td></tr><tr><td class="w">Fri Oct 16, 8:30 am</td><td class="aea">[AEA] ES Picture make-up day</td></tr><tr><td class="w">Mon Oct 19 – Fri Oct 23</td><td class="aea">[AEA] Elementary Scholastic Book Fair October 19-23</td></tr><tr><td class="w">Mon Oct 19 – Fri Oct 23</td><td class="aea">[AEA] Minimum days - Parent/Teacher Conferences</td></tr><tr><td class="w">Fri Oct 30, 4:00 pm</td><td class="aea">[AEA] Trunk or Treat Party!!!!!!</td></tr><tr class="month"><td colspan="2">November 2026</td></tr><tr><td class="w">Wed Nov 11</td><td class="both">[BOTH OFF] Veterans&#x27; Day - NO SCHOOL (PBMS: confirm)</td></tr><tr><td class="w">Thu Nov 12, 6:00 pm</td><td class="aea">[AEA] AEA Lantern Fest TK-8th @ Organ Pavilion</td></tr><tr><td class="w">Mon Nov 23 – Fri Nov 27</td><td class="both">[BOTH OFF] Fall vacation - NO SCHOOL</td></tr><tr class="month"><td colspan="2">December 2026</td></tr><tr><td class="w">Sun Dec 6, 4:00 pm</td><td class="aea">[AEA] Winter Market!!!!!</td></tr><tr><td class="w">Fri Dec 18</td><td class="aea">[AEA] Fall semester ends</td></tr><tr><td class="w">Mon Dec 21 – Fri Jan 8</td><td class="aea">[AEA] Winter vacation - NO SCHOOL</td></tr><tr><td class="w">Mon Dec 21 – Mon Jan 4</td><td class="both">[BOTH OFF] [PBMS] Winter Break (NO SCHOOL)</td></tr><tr class="month"><td colspan="2">January 2027</td></tr><tr><td class="w">Tue Jan 5 – Fri Jan 8</td><td class="alert">[AEA ONLY OFF] PBMS is in school Jan 5–Jan 8</td></tr><tr><td class="w">Tue Jan 5</td><td class="pbms">[PBMS] School Reopens from Winter Break</td></tr><tr><td class="w">Mon Jan 11</td><td class="aea">[AEA] Spring semester begins</td></tr><tr><td class="w">Mon Jan 18</td><td class="both">[BOTH OFF] Martin Luther King Jr. Day - NO SCHOOL</td></tr><tr class="month"><td colspan="2">February 2027</td></tr><tr><td class="w">Fri Feb 12</td><td class="both">[BOTH OFF] Presidents&#x27; Day - NO SCHOOL</td></tr><tr><td class="w">Mon Feb 15</td><td class="both">[BOTH OFF] Presidents&#x27; Day - NO SCHOOL</td></tr><tr class="month"><td colspan="2">March 2027</td></tr><tr><td class="w">Mon Mar 8</td><td class="pbms">[PBMS] Non-instructional Day (NO SCHOOL) — AEA not marked off</td></tr><tr><td class="w">Mon Mar 15 – Thu Mar 18</td><td class="aea">[AEA] Elementary Scholastic Book Fair from March 15-18</td></tr><tr><td class="w">Wed Mar 17 – Fri Mar 19</td><td class="aea">[AEA] Minimum days - Parent/Teacher Conferences</td></tr><tr><td class="w">Mon Mar 22 – Fri Mar 26</td><td class="alert">[AEA ONLY OFF] PBMS is in school Mar 22–Mar 26</td></tr><tr><td class="w">Mon Mar 22 – Fri Apr 2</td><td class="aea">[AEA] Spring vacation - NO SCHOOL</td></tr><tr><td class="w">Mon Mar 29 – Fri Apr 2</td><td class="both">[BOTH OFF] [PBMS] Spring Break (NO SCHOOL)</td></tr><tr class="month"><td colspan="2">April 2027</td></tr><tr><td class="w">Thu Apr 1</td><td class="pbms">[PBMS] First Day of School Library Month</td></tr><tr><td class="w">Fri Apr 23, 8:30 am</td><td class="aea">[AEA] 5th grade graduation pictures</td></tr><tr class="month"><td colspan="2">May 2027</td></tr><tr><td class="w">Wed May 26</td><td class="pbms">[PBMS] Last Day of School</td></tr><tr><td class="w">Mon May 31</td><td class="both">[BOTH OFF] Memorial Day - NO SCHOOL (PBMS: confirm)</td></tr><tr class="month"><td colspan="2">June 2027</td></tr><tr><td class="w">Wed Jun 2</td><td class="aea">[AEA] 5th grade promotion</td></tr><tr><td class="w">Fri Jun 4</td><td class="aea">[AEA] Last day of school - Minimum day</td></tr><tr><td class="w">Fri Jun 4</td><td class="aea">[AEA] Spring semester ends</td></tr><tr><td class="w">Sat Jun 19</td><td class="aea">[AEA] Juneteenth</td></tr><tr><td class="w">Sat Jun 19</td><td class="pbms">[PBMS] Juneteenth (confirm)</td></tr></table>
+<div class="chips" role="group" aria-label="Filter">
+  <button class="chip" data-f="all" aria-pressed="true">All</button>
+  <button class="chip" data-f="off" aria-pressed="false">Days off</button>
+  <button class="chip" data-f="aea" aria-pressed="false">AEA</button>
+  <button class="chip" data-f="pbms" aria-pressed="false">PBMS</button>
+</div>
+<div id="list"><div class="month">October 2026</div><div class="row off" data-tags="aea off"><div class="w">Mon Oct 12</div><div class="t"><span class="tag aea">AEA</span><span class="s">Indigenous People&#x27;s Day - NO SCHOOL — PBMS not marked off</span></div></div><div class="row" data-tags="aea"><div class="w">Fri Oct 16, 8:30 am</div><div class="t"><span class="tag aea">AEA</span><span class="s">ES Picture make-up day</span></div></div><div class="row" data-tags="aea"><div class="w">Mon Oct 19 – Fri Oct 23</div><div class="t"><span class="tag aea">AEA</span><span class="s">Elementary Scholastic Book Fair October 19-23</span></div></div><div class="row" data-tags="aea"><div class="w">Mon Oct 19 – Fri Oct 23</div><div class="t"><span class="tag aea">AEA</span><span class="s">Minimum days - Parent/Teacher Conferences</span></div></div><div class="row" data-tags="aea"><div class="w">Fri Oct 30, 4:00 pm</div><div class="t"><span class="tag aea">AEA</span><span class="s">Trunk or Treat Party!!!!!!</span></div></div><div class="month">November 2026</div><div class="row off" data-tags="aea off pbms"><div class="w">Wed Nov 11</div><div class="t"><span class="tag both">BOTH OFF</span><span class="s">Veterans&#x27; Day - NO SCHOOL (PBMS: confirm)</span></div></div><div class="row" data-tags="aea"><div class="w">Thu Nov 12, 6:00 pm</div><div class="t"><span class="tag aea">AEA</span><span class="s">AEA Lantern Fest TK-8th @ Organ Pavilion</span></div></div><div class="row off" data-tags="aea off pbms"><div class="w">Mon Nov 23 – Fri Nov 27</div><div class="t"><span class="tag both">BOTH OFF</span><span class="s">Fall vacation - NO SCHOOL</span></div></div><div class="month">December 2026</div><div class="row" data-tags="aea"><div class="w">Sun Dec 6, 4:00 pm</div><div class="t"><span class="tag aea">AEA</span><span class="s">Winter Market!!!!!</span></div></div><div class="row" data-tags="aea"><div class="w">Fri Dec 18</div><div class="t"><span class="tag aea">AEA</span><span class="s">Fall semester ends</span></div></div><div class="row off" data-tags="aea off"><div class="w">Mon Dec 21 – Fri Jan 8</div><div class="t"><span class="tag aea">AEA</span><span class="s">Winter vacation - NO SCHOOL</span></div></div><div class="row off" data-tags="aea off pbms"><div class="w">Mon Dec 21 – Mon Jan 4</div><div class="t"><span class="tag both">BOTH OFF</span><span class="tag pbms">PBMS</span><span class="s">Winter Break (NO SCHOOL)</span></div></div><div class="month">January 2027</div><div class="row off" data-tags="aea off"><div class="w">Tue Jan 5 – Fri Jan 8</div><div class="t"><span class="tag alert">AEA ONLY OFF</span><span class="s">PBMS is in school Jan 5–Jan 8</span></div></div><div class="row" data-tags="pbms"><div class="w">Tue Jan 5</div><div class="t"><span class="tag pbms">PBMS</span><span class="s">School Reopens from Winter Break</span></div></div><div class="row" data-tags="aea"><div class="w">Mon Jan 11</div><div class="t"><span class="tag aea">AEA</span><span class="s">Spring semester begins</span></div></div><div class="row off" data-tags="aea off pbms"><div class="w">Mon Jan 18</div><div class="t"><span class="tag both">BOTH OFF</span><span class="s">Martin Luther King Jr. Day - NO SCHOOL</span></div></div><div class="month">February 2027</div><div class="row off" data-tags="aea off pbms"><div class="w">Fri Feb 12</div><div class="t"><span class="tag both">BOTH OFF</span><span class="s">Presidents&#x27; Day - NO SCHOOL</span></div></div><div class="row off" data-tags="aea off pbms"><div class="w">Mon Feb 15</div><div class="t"><span class="tag both">BOTH OFF</span><span class="s">Presidents&#x27; Day - NO SCHOOL</span></div></div><div class="month">March 2027</div><div class="row off" data-tags="off pbms"><div class="w">Mon Mar 8</div><div class="t"><span class="tag pbms">PBMS</span><span class="s">Non-instructional Day (NO SCHOOL) — AEA not marked off</span></div></div><div class="row" data-tags="aea"><div class="w">Mon Mar 15 – Thu Mar 18</div><div class="t"><span class="tag aea">AEA</span><span class="s">Elementary Scholastic Book Fair from March 15-18</span></div></div><div class="row" data-tags="aea"><div class="w">Wed Mar 17 – Fri Mar 19</div><div class="t"><span class="tag aea">AEA</span><span class="s">Minimum days - Parent/Teacher Conferences</span></div></div><div class="row off" data-tags="aea off"><div class="w">Mon Mar 22 – Fri Mar 26</div><div class="t"><span class="tag alert">AEA ONLY OFF</span><span class="s">PBMS is in school Mar 22–Mar 26</span></div></div><div class="row off" data-tags="aea off"><div class="w">Mon Mar 22 – Fri Apr 2</div><div class="t"><span class="tag aea">AEA</span><span class="s">Spring vacation - NO SCHOOL</span></div></div><div class="row off" data-tags="aea off pbms"><div class="w">Mon Mar 29 – Fri Apr 2</div><div class="t"><span class="tag both">BOTH OFF</span><span class="tag pbms">PBMS</span><span class="s">Spring Break (NO SCHOOL)</span></div></div><div class="month">April 2027</div><div class="row" data-tags="pbms"><div class="w">Thu Apr 1</div><div class="t"><span class="tag pbms">PBMS</span><span class="s">First Day of School Library Month</span></div></div><div class="row" data-tags="aea"><div class="w">Fri Apr 23, 8:30 am</div><div class="t"><span class="tag aea">AEA</span><span class="s">5th grade graduation pictures</span></div></div><div class="month">May 2027</div><div class="row" data-tags="pbms"><div class="w">Wed May 26</div><div class="t"><span class="tag pbms">PBMS</span><span class="s">Last Day of School</span></div></div><div class="row off" data-tags="aea off pbms"><div class="w">Mon May 31</div><div class="t"><span class="tag both">BOTH OFF</span><span class="s">Memorial Day - NO SCHOOL (PBMS: confirm)</span></div></div><div class="month">June 2027</div><div class="row" data-tags="aea"><div class="w">Wed Jun 2</div><div class="t"><span class="tag aea">AEA</span><span class="s">5th grade promotion</span></div></div><div class="row" data-tags="aea"><div class="w">Fri Jun 4</div><div class="t"><span class="tag aea">AEA</span><span class="s">Last day of school - Minimum day</span></div></div><div class="row" data-tags="aea"><div class="w">Fri Jun 4</div><div class="t"><span class="tag aea">AEA</span><span class="s">Spring semester ends</span></div></div><div class="row" data-tags="aea"><div class="w">Sat Jun 19</div><div class="t"><span class="tag aea">AEA</span><span class="s">Juneteenth</span></div></div><div class="row off" data-tags="off pbms"><div class="w">Sat Jun 19</div><div class="t"><span class="tag pbms">PBMS</span><span class="s">Juneteenth (confirm)</span></div></div></div>
+
+<footer>
+  Built daily from the AEA, PBMS and SDUSD district public calendars. Source dates are the schools'; check with the school if something looks off.
+  
+</footer>
+
+<script>
+(function(){
+  var copy=document.getElementById('copy');
+  copy.addEventListener('click',function(){
+    var t=document.getElementById('feed').textContent;
+    (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){
+      copy.textContent='Copied';setTimeout(function(){copy.textContent='Copy'},1500);
+    },function(){
+      var r=document.createRange();r.selectNodeContents(document.getElementById('feed'));
+      var s=getSelection();s.removeAllRanges();s.addRange(r);
+    });
+  });
+  var chips=document.querySelectorAll('.chip');
+  chips.forEach(function(c){c.addEventListener('click',function(){
+    var f=c.dataset.f;
+    chips.forEach(function(x){x.setAttribute('aria-pressed',x===c)});
+    document.querySelectorAll('#list .row').forEach(function(r){
+      r.hidden=!(f==='all'||r.dataset.tags.split(' ').indexOf(f)>=0);
+    });
+    document.querySelectorAll('#list .month').forEach(function(m){
+      var n=m.nextElementSibling,any=false;
+      while(n&&!n.classList.contains('month')){if(!n.hidden)any=true;n=n.nextElementSibling}
+      m.hidden=!any;
+    });
+  })});
+})();
+</script>
 </main></body></html>

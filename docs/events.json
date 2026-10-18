@@ -84,10 +84,6 @@
    "summary": "[AEA] (3-5th) Basketball Lunch League Sign-ups Due",
    "when": "Thu Jan 26, 2:45 pm"
   },
-  "1nbvniob80b8g86dkv88ck6o81@google.com|2026-09-17 18:00:00-07:00": {
-   "summary": "[AEA] Parent/Admin - Greet and Eat",
-   "when": "Thu Sep 17, 6:00 pm"
-  },
   "2845omf04ohvhjemqc0plsth40@google.com|2010-01-11 08:30:00-08:00": {
    "summary": "[AEA] Principal Vaughn's Academic Office Hours",
    "when": "Mon Jan 11, 8:30 am"
@@ -584,8 +580,8 @@
    "summary": "[AEA] The 15th Annual Komen San Diego Race for the Cure 5K Run/Walk",
    "when": "Sun Nov 6, 8:00 am"
   },
-  "uptid963oluohrgec0lgloklhc_R20161121@google.com|2016-11-21": {
-   "summary": "[AEA] No School - Fall Break \u2014 PBMS not marked off",
+  "uptid963oluohrgec0lgloklhc@google.com|2016-11-21": {
+   "summary": "[AEA] No School \u2014 PBMS not marked off",
    "when": "Mon Nov 21"
   },
   "vaauatb9ka2ggoi3q7o0vluobs@google.com|2011-12-06 11:00:00-08:00": {
@@ -601,16 +597,21 @@
    "when": "Fri Sep 11"
   }
  },
- "last_changed": "Sat Oct 17, 6:41 AM",
+ "last_changed": "Sun Oct 18, 6:42 AM",
  "last_changes": [
   [
    "Added",
-   "[AEA] No School - Fall Break \u2014 PBMS not marked off",
+   "[AEA] No School \u2014 PBMS not marked off",
    "Mon Nov 21"
   ],
   [
    "Removed",
-   "[AEA] No School \u2014 PBMS not marked off",
+   "[AEA] Parent/Admin - Greet and Eat",
+   "Thu Sep 17, 6:00 pm"
+  ],
+  [
+   "Removed",
+   "[AEA] No School - Fall Break \u2014 PBMS not marked off",
    "Mon Nov 21"
   ]
  ]

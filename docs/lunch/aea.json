@@ -138,6 +138,86 @@
         ]
       },
       "status": "ok"
+    },
+    "2026-11": {
+      "source": "https://www.aeacs.org/wp-content/uploads/2026/10/November2026_ElementaryMenu.pdf",
+      "checked": "2026-11-01T14:19+00:00",
+      "days": {
+        "2026-11-02": [
+          "Bean & Cheese Burrito w/ Corn Tajin",
+          "Orange Chicken with Brown Rice, Peas, and Goldfish Grahams",
+          "Wowbutter & Jelly Sandwich w/ Tajin Corn"
+        ],
+        "2026-11-03": [
+          "Parm Pizza Bites w/ Marinara Dipping Sauce",
+          "Pineapple Teriyaki Chicken w/ Rice & Diced Carrots",
+          "Italian Turkey Trio on Hoagie w/ Baby Carrots"
+        ],
+        "2026-11-04": [
+          "Chicken Dumplings w/ Mixed Veggies",
+          "Mac & Cheese w/ Mixed Vegetables",
+          "Sesame Beef Bowl w/ Broccoli"
+        ],
+        "2026-11-05": [
+          "BBQ Chicken w/ Baked Beans & Dinner Roll",
+          "Bean & Cheese Pupusa w/ Pinto Beans",
+          "Egg Salad Sandwich w/ Churro Fava Beans"
+        ],
+        "2026-11-06": [
+          "Cheese Pizza",
+          "Pepperoni Pizza",
+          "Chicken Caesar Salad with Dinner Roll & Croutons"
+        ],
+        "2026-11-09": [
+          "Cheeseburger w/ Oven Baked Fries",
+          "Beef & Cheese Taco Stick w/ Corn Tajin",
+          "Turkey & Cheese Sub Sandwich w/ Tajin Corn"
+        ],
+        "2026-11-10": [
+          "Penne & Meat Sauce",
+          "Bean & Cheese Burrito w/ Baby Carrots",
+          "Cheese Pizza Kit"
+        ],
+        "2026-11-12": [
+          "Cheese Tamale w/ Black Beans",
+          "Turkey Nachos w/ Refried Beans & Tortilla Chips",
+          "Southwest Chicken Salad w/ WG Dinner Roll"
+        ],
+        "2026-11-13": [
+          "Cheese Pizza",
+          "Pepperoni Pizza",
+          "Turkey & Gravy w/ Mashed Potatoes & Dinner Roll"
+        ],
+        "2026-11-16": [
+          "Chicken Bites w/ Mashed Potatoes",
+          "Soy Veggie Burger w/ Potato Wedges",
+          "Turkey & Cheese Sandwich on Pretzel Bun w/ Tajin Corn"
+        ],
+        "2026-11-17": [
+          "Beef & Cheese Taco Stick w/ Baby Carrots",
+          "Cheese Lasagna w/ Marinara & Graham Crackers",
+          "Chicken Salad Sandwich w/ Baby Carrots"
+        ],
+        "2026-11-18": [
+          "Chicken Teriyaki w/ Not So Fried Rice & Diced Carrot",
+          "Chicken Alfredo Pasta w/ Peas",
+          "Cheese Pizza Kit"
+        ],
+        "2026-11-19": [
+          "Grilled Cheese Sandwich w/ Roasted Fava Beans",
+          "Chicken Tamale w/ Pinto Beans",
+          "Turkey & Cheese Sandwich w/ Roasted Fava Beans"
+        ],
+        "2026-11-20": [
+          "Cheese Pizza",
+          "Pepperoni Pizza",
+          "Crispy Chicken Sandwich"
+        ],
+        "2026-11-30": [
+          "Shelf Stable Kit - Seedbutter, Cheese, Wheat Cracker, Graham Cracker, Applesauce, Fava Beans & Roasted Chickpeas"
+        ]
+      },
+      "status": "ok"
     }
   }
 }

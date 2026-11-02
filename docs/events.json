@@ -12,6 +12,10 @@
    "summary": "[AEA] Red Ribbon Days",
    "when": "Wed Oct 24"
   },
+  "08cdje6s7o77bfn9sm7qp9c5mq@google.com|2026-11-04 08:15:00-08:00": {
+   "summary": "[AEA] Pastries with the Principal - Elementary",
+   "when": "Wed Nov 4, 8:15 am"
+  },
   "0g93enh6g6uqmkrufqvv9lqfo8@google.com|2008-12-01 08:30:00-08:00": {
    "summary": "[AEA] Scholastic Bookfair",
    "when": "Mon Dec 1, 8:30 am"
@@ -271,10 +275,6 @@
   "7bmhp9rggojl6na1u4eranc8ng@google.com|2027-06-19": {
    "summary": "[PBMS] Juneteenth (confirm)",
    "when": "Sat Jun 19"
-  },
-  "7i00m2q1b4adhvd7mo7rnbqans@google.com|2026-10-02": {
-   "summary": "[AEA] German Spirit Day Elementary",
-   "when": "Fri Oct 2"
   },
   "7i8h3le7qvv9f9jlbmh0l3h8de@google.com|2021-09-15 13:00:00-07:00": {
    "summary": "[AEA] OPTIONAL Covid testing on each campus (Students and Staff only)",
@@ -580,8 +580,8 @@
    "summary": "[AEA] The 15th Annual Komen San Diego Race for the Cure 5K Run/Walk",
    "when": "Sun Nov 6, 8:00 am"
   },
-  "uptid963oluohrgec0lgloklhc@google.com|2016-11-21": {
-   "summary": "[AEA] No School \u2014 PBMS not marked off",
+  "uptid963oluohrgec0lgloklhc_R20161121@google.com|2016-11-21": {
+   "summary": "[AEA] No School - Fall Break \u2014 PBMS not marked off",
    "when": "Mon Nov 21"
   },
   "vaauatb9ka2ggoi3q7o0vluobs@google.com|2011-12-06 11:00:00-08:00": {
@@ -597,16 +597,26 @@
    "when": "Fri Sep 11"
   }
  },
- "last_changed": "Tue Oct 27, 7:02 AM",
+ "last_changed": "Mon Nov 2, 6:28 AM",
  "last_changes": [
   [
    "Added",
-   "[AEA] No School \u2014 PBMS not marked off",
+   "[AEA] No School - Fall Break \u2014 PBMS not marked off",
    "Mon Nov 21"
   ],
   [
+   "Added",
+   "[AEA] Pastries with the Principal - Elementary",
+   "Wed Nov 4, 8:15 am"
+  ],
+  [
    "Removed",
-   "[AEA] No School - Fall Break \u2014 PBMS not marked off",
+   "[AEA] German Spirit Day Elementary",
+   "Fri Oct 2"
+  ],
+  [
+   "Removed",
+   "[AEA] No School \u2014 PBMS not marked off",
    "Mon Nov 21"
   ]
  ]
